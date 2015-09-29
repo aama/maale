@@ -1,6 +1,9 @@
 {
 :lang :maale
 :sgpref "mal"
+:datasource "Amha2001"
+:geodemoURL "http://www.ethnologue.com/language/mdy"
+:geodemoTXT "Varieties and subdialects of the Omotic language Maale are spoken in"
 :schemata {
 :case [:Ablative, :Absolutive, :Common, :Dative, :Instrumental, :Nominative, :Possessive]
 	  :clauseType [:Causal, :Common, :Conditional, :Converb1, :Converb2, :Converb3, :Declarative, :Imperative, :InterrDubitative, :InterrNonPolar, :InterrPolar, :Optative, :Preventive, :Purposive1, :Purposive2, :Simultaneous, :Temporal1, :Temporal2]
