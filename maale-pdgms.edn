@@ -1,9 +1,10 @@
 {
 :lang :maale
 :sgpref "mal"
+:subfamily "Northern Omotic Ometo South"
 :datasource "Amha2001"
 :geodemoURL "http://www.ethnologue.com/language/mdy"
-:geodemoTXT "Varieties and subdialects of the Omotic language Maale are spoken in"
+:geodemoTXT "Varieties and subdialects of the Omotic language Maale are spoken in Ethiopia, 'Southern Nations, Nationalities, and Peoples’ region: North Omo zone, southeast of Jinka'; approx. 94,700 speakers."
 :schemata {
            :case [:Ablative, :Absolutive, :CaseC, :Dative, :Instrumental, :Nominative, :Possessive]
 	  :clauseType [:Causal, :ClauseC, :Conditional, :Converb1, :Converb2, :Converb3, :Declarative, :Imperative, :InterrDubitative, :InterrNonPolar, :InterrPolar, :Optative, :Preventive, :Purposive1, :Purposive2, :Simultaneous, :Temporal1, :Temporal2]
