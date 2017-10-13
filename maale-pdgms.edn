@@ -5,22 +5,22 @@
 :datasource "Amha2001"
 :geodemoURL "http://www.ethnologue.com/language/mdy"
 :geodemoTXT "Varieties and subdialects of the Omotic language Maale are spoken in Ethiopia, 'Southern Nations, Nationalities, and Peoples’ region: North Omo zone, southeast of Jinka'; approx. 94,700 speakers."
-:schemata{:gender [:Common :Fem :Masc],
-          :modal [:ModC :Mirative :NewInfo :NonVerbal :Perfective :Veridical],
-          :possType [:Poss1 :Poss2 :PossNom1 :PossNom2],
-          :rootStructure [:Group1 :Group2],
-          :polarity [:Affirmative :Negative],
-          :case [:Ablative :Absolutive :CaseC :Dative :Instrumental :Nominative :Possessive],
-          :pdgmType [:Finite :NA :RootStructure]
-          :pos [:Pronoun :Verb],
-          :person [:PersC :Person1 :Person2 :Person3 :Person3Ref],
-          :derivedStem [:Causative :Causative2 :Denominal :Inchoative :Intensive :Passive :PassiveCausative :Reflexive],
-          :morphClass [:BE :DervStem :InflectionTemplate :RootStructure],
-          :proClass [:BasicPro :CaseMarking :ProPoss :Pro2ary :ProInd :Restrictive],
-          :tam [:TamC :Imperfective :ImperfectiveFuture :ImperfectivePresent :InterrPerm :Perfective],
-          :clauseType [:Causal :ClauseC :Conditional :Converb1 :Converb2 :Converb3 :Declarative :Imperative :InterrDubitative :InterrNonPolar :InterrPolar :Optative :Preventive :Purposive1 :Purposive2 :Simultaneous :Temporal1 :Temporal2],
-          :number [:NumC :Plural :Singular],
-          :temporal [:Clauses]}
+ :schemata {:pdgmSubClass [:BE ],
+            :case [:Ablative  :Absolutive :CaseC :Dative :Instrumental :Nominative :Possessive],
+            :clauseType [:Causal :ClauseC :Conditional :Converb1 :Converb2 :Converb3 :Declarative :Imperative :InterrDubitative :InterrNonPolar :InterrPolar :Optative :Preventive :Purposive1 :Purposive2 :Simultaneous :Temporal1 :Temporal2],
+            :derivedStem [:Causative :Causative2 :Denominal :Inchoative :Intensive :Passive :PassiveCausative :Reflexive],
+            :gender [:Common :Fem :Masc],
+            :modal [:Mirative :ModC :NewInfo :NonVerbal :Perfective :Veridical],
+            :number [:NumC :Plural :Singular :persC],
+            :person [:PersC :Person1 :Person2 :Person3 :Person3Ref :To_be_added],
+            :polarity [:Affirmative :Negative],
+            :pos [:Pronoun :Verb],
+            :possType [:Poss1 :Poss2 :PossNom1 :PossNom2],
+            :proClass [:BasicPro :CaseMarking :Pro2ary :ProInd :ProPoss :Restrictive],
+            :rootStructure [:Group1 :Group2],
+            :tam [:Imperfective :ImperfectiveFuture :ImperfectivePresent :InterrPerm :Perfective :TamC :To_be_added],
+            :temporal [:Clauses]
+            :pdgmType [:DervStem :InflectionTemplate :RootStructure :CopulaBE :PRO :FiniteToBeAdded]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :clauseType :derivedStem :modal :polarity :pos possType :proClass :tam :temporal],
           :inflClass [:rootStructure],
@@ -40,12 +40,10 @@
 :lxterms [
     {:label "maale-VInflectionTemplate"
     :note "Amha2001 Ch. 7 (summary p. 158);Ch. 8 (summary p. 202). Maale verb morphology does not include subject agreement,with partial exception of imperative-optative. Inflectional template is:[VRoot (+ dervSuff)](+ AspectMarker) + moodClauseMarker. Attested combinations of aspect and clause suffixes given in paradigm. Template: AspSuff + ClauseSuff + Note."
-    :pdgmType :Finite
-    :common {:morpheme :VINFLECTIONTEMPLATE,
-             :pos :Verb,
+    :pdgmType :InflectionTemplate
+    :common {:pos :Verb,
              :gender :Common,
-             :lexeme :mu,
-             :verbMorphClass :InflectionTemplate}
+             :lexeme :mu}
     :terms [[:clauseType :modal :polarity :tam :number :person :token :token-note-template],
             [:Causal :ModC :Affirmative :ImperfectivePresent :NumC :PersC "Common . . .  -tsi-ró" "Common + -tsi-ró +"],
             [:Causal :ModC :Affirmative :Perfective :NumC :PersC "Common . . .  -tsi-ró" "Common + -tsi-ró +"],
@@ -94,9 +92,8 @@
 :muterms [
     {:label "maale-P2ary"
     :note "Amha2001 #4.2."
-    :pdgmType :NA
-    :common {:morpheme :PRO2ARY,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Pro2ary}
     :terms [[:case :number :person :gender :token],
             [:Absolutive :Singular :Person3 :Masc "ʔi-z-á"],
@@ -114,9 +111,8 @@
     }
     {:label "maale-PBasicPro"
     :note "Amha2001 #4.1"
-    :pdgmType :NA
-    :common {:morpheme :PROBASIC,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :BasicPro}
     :terms [[:case :number :person :gender :token],
             [:CaseC :Singular :Person1 :Common "tá"],
@@ -131,9 +127,8 @@
     }
     {:label "maale-PCaseMarking"
     :note "Amha2001 #4.6"
-    :pdgmType :NA
-    :common {:morpheme :PROCASEMARKING,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :CaseMarking}
     :terms [[:case :number :person :gender :token],
             [:Ablative :Singular :Person1 :Common "tááppe"],
@@ -176,9 +171,8 @@
     :note "Amha2001 Table 4.2. PossType:poss1 – basic;poss2 – when possessed noun is
             modified;possNom1 – possessive noun involving known possession;possNom2 – possessive
             noun involving unknown possession"
-    :pdgmType :NA
+    :pdgmType :PRO
     :common {:case :Possessive,
-             :morpheme :PROPOSS,
              :pos :Pronoun,
              :proClass :ProPoss}
     :terms [[:possType :number :person :gender :token],
@@ -216,9 +210,8 @@
             unmarked for case,num,and gen. This pronoun occurs only when there is a co-referential
             third person subject in the same sentence. It cannot e used co-referentially across
             sentences(p. 87)."
-    :pdgmType :NA
-    :common {:morpheme :PROIND,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :ProInd}
     :terms [[:case :number :person :gender :token],
             [:Absolutive :Singular :Person1 :Common "táná"],
@@ -246,9 +239,8 @@
     }
     {:label "maale-PRestrictive"
     :note "Amha2001 #4.5. I alone,you alone,."
-    :pdgmType :NA
-    :common {:morpheme :PRORESTRICTIVE,
-             :pos :Pronoun,
+    :pdgmType :PRO
+    :common {:pos :Pronoun,
              :proClass :Restrictive}
     :terms [[:number :person :token],
             [:Singular :Person1 "taasi"],
@@ -260,11 +252,10 @@
     {:label "maale-VBE"
     :note "Amha2001 #5.3.1.3 The various verbs BE/EXIST only occur with aspect suffixes
             noted in paradigm. Template: AspSuff + beStem + Modal Context"
-    :pdgmType :Finite
-    :common {:morpheme :COPULABE,
-             :pos :Verb,
+    :pdgmType :CopulaBE
+    :common {:pos :Verb,
              :temporal :Clauses,
-             :verbMorphClass :BE}
+             :pdgmSubClassClass :BE}
     :terms [[:polarity :tam :token :token-note-template],
             [:Affirmative :ImperfectiveFuture "N- . . .  -andá- : Dubitative" "-andá- + N- + Dubitative"],
             [:Affirmative :ImperfectivePresent "t- . . .  Common : PresentConditionals" "Common + t- + PresentConditionals"],
@@ -276,10 +267,8 @@
     {:label "maale-VDervStem"
     :note "Amha2001 #5.2. Author gives many phonological and semantic details about affix
             and verb-stem alternations and lexico-semantic effects."
-    :pdgmType :Finite
-    :common {:morpheme :DERVSTEM,
-             :pos :Verb,
-             :verbMorphClass :DervStem}
+    :pdgmType :DervStem
+    :common {:pos :Verb}
     :terms [[:derivedStem :token],
             [:Causative "-is- ~ -iš- ~ -z- ~ -s- ~ cc- goes_to cc- ~ šk- goes_to šš- / šk-is-"],
             [:Causative2 "-is-is-"],
@@ -293,9 +282,7 @@
     {:label "maale-VRootStructure"
     :note "Amha2001 Table 5.1-2. Root structure:group1 – one-peak roots;group2 – two-peak roots"
     :pdgmType :RootStructure
-    :common {:morpheme :VROOTSTRUCTURE,
-             :pos :Verb,
-             :morphClass :RootStructure}
+    :common {:pos :Verb}
     :terms [[:rootStructure :token :token-note-structure],
             [:Group1 "t-" "C + be"],
             [:Group1 "n-" "C + be"],
@@ -324,6 +311,16 @@
             [:Group2 "gogaik’k’-" "CVCVVCC + Shiver"],
             [:Group2 "deeɓisk-" "CVVCVCC + belch"]]
     }
+    {:label "Finite_Verb_Paradigms_to_be_added"
+     :pdgmType :FiniteToBeAdded
+     :common {:pos :Verb,
+              :person :To_be_added
+              :tam :To_be_added
+              }
+     :terms [[:token],
+             ["not attested"]]
+     }
+
 ]
 }
  
