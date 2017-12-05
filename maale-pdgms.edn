@@ -5,13 +5,14 @@
 :datasource "Amha2001"
 :geodemoURL "http://www.ethnologue.com/language/mdy"
 :geodemoTXT "Varieties and subdialects of the Omotic language Maale are spoken in Ethiopia, 'Southern Nations, Nationalities, and Peoples’ region: North Omo zone, southeast of Jinka'; approx. 94,700 speakers."
- :schemata {:pdgmSubClass [:BE ],
-            :case [:Ablative  :Absolutive :CaseC :Dative :Instrumental :Nominative :Possessive],
+ :schemata {:vmorphClass [:CopulaBE  :DervStem :InflectionTemplate :RootStructure],
+            :case [:Ablative :Absolutive :CaseC :Dative :Instrumental :Nominative :Possessive],
             :clauseType [:Causal :ClauseC :Conditional :Converb1 :Converb2 :Converb3 :Declarative :Imperative :InterrDubitative :InterrNonPolar :InterrPolar :Optative :Preventive :Purposive1 :Purposive2 :Simultaneous :Temporal1 :Temporal2],
             :derivedStem [:Causative :Causative2 :Denominal :Inchoative :Intensive :Passive :PassiveCausative :Reflexive],
             :gender [:Common :Fem :Masc],
             :modal [:Mirative :ModC :NewInfo :NonVerbal :Perfective :Veridical],
-            :number [:NumC :Plural :Singular :persC],
+            :number [:NumC :Plural :Singular],
+            :pdgmSubClass [:BE],
             :person [:PersC :Person1 :Person2 :Person3 :Person3Ref :To_be_added],
             :polarity [:Affirmative :Negative],
             :pos [:Pronoun :Verb],
@@ -20,7 +21,7 @@
             :rootStructure [:Group1 :Group2],
             :tam [:Imperfective :ImperfectiveFuture :ImperfectivePresent :InterrPerm :Perfective :TamC :To_be_added],
             :temporal [:Clauses]
-            :pdgmType [:DervStem :InflectionTemplate :RootStructure :CopulaBE :PRO :FiniteToBeAdded]}
+            :pdgmType [:FiniteToBeAdded :PRO :VOther]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :clauseType :derivedStem :modal :polarity :pos possType :proClass :tam :temporal],
           :inflClass [:rootStructure],
@@ -40,8 +41,9 @@
 :lxterms [
     {:label "maale-VInflectionTemplate"
     :note "Amha2001 Ch. 7 (summary p. 158);Ch. 8 (summary p. 202). Maale verb morphology does not include subject agreement,with partial exception of imperative-optative. Inflectional template is:[VRoot (+ dervSuff)](+ AspectMarker) + moodClauseMarker. Attested combinations of aspect and clause suffixes given in paradigm. Template: AspSuff + ClauseSuff + Note."
-    :pdgmType :InflectionTemplate
-    :common {:pos :Verb,
+    :pdgmType :VOther
+    :common {:vmorphClass :InflectionTemplate
+             :pos :Verb,
              :gender :Common,
              :lexeme :mu}
     :terms [[:clauseType :modal :polarity :tam :number :person :token :token-note-template],
@@ -221,7 +223,7 @@
             [:Absolutive :Plural :Person1 :Common "núná"],
             [:Absolutive :Plural :Person2 :Common "ʔíntsi"],
             [:Absolutive :Plural :Person3 :Common "ʔiyátó"],
-            [:CaseC :persC :Person3Ref :Common "pe-"],
+            [:CaseC :NumC :Person3Ref :Common "pe-"],
             [:Nominative :Singular :Person1 :Common "táání / tá"],
             [:Nominative :Singular :Person2 :Common "nééní / né"],
             [:Nominative :Singular :Person3 :Masc "ʔízí / ʔííní / ʔí"],
@@ -252,10 +254,11 @@
     {:label "maale-VBE"
     :note "Amha2001 #5.3.1.3 The various verbs BE/EXIST only occur with aspect suffixes
             noted in paradigm. Template: AspSuff + beStem + Modal Context"
-    :pdgmType :CopulaBE
-    :common {:pos :Verb,
+    :pdgmType :VOther
+    :common {:vmorphClass :CopulaBE
+             :pos :Verb,
              :temporal :Clauses,
-             :pdgmSubClassClass :BE}
+             :pdgmSubClass :BE}
     :terms [[:polarity :tam :token :token-note-template],
             [:Affirmative :ImperfectiveFuture "N- . . .  -andá- : Dubitative" "-andá- + N- + Dubitative"],
             [:Affirmative :ImperfectivePresent "t- . . .  Common : PresentConditionals" "Common + t- + PresentConditionals"],
@@ -267,8 +270,9 @@
     {:label "maale-VDervStem"
     :note "Amha2001 #5.2. Author gives many phonological and semantic details about affix
             and verb-stem alternations and lexico-semantic effects."
-    :pdgmType :DervStem
-    :common {:pos :Verb}
+    :pdgmType :VOther
+    :common {:vmorphClass :DervStem
+             :pos :Verb}
     :terms [[:derivedStem :token],
             [:Causative "-is- ~ -iš- ~ -z- ~ -s- ~ cc- goes_to cc- ~ šk- goes_to šš- / šk-is-"],
             [:Causative2 "-is-is-"],
@@ -281,8 +285,9 @@
     }
     {:label "maale-VRootStructure"
     :note "Amha2001 Table 5.1-2. Root structure:group1 – one-peak roots;group2 – two-peak roots"
-    :pdgmType :RootStructure
-    :common {:pos :Verb}
+    :pdgmType :VOther
+    :common {:vmorphClass :RootStructure
+             :pos :Verb}
     :terms [[:rootStructure :token :token-note-structure],
             [:Group1 "t-" "C + be"],
             [:Group1 "n-" "C + be"],
