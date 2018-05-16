@@ -295,7 +295,7 @@
                          [:Group2 "deeɓisk-" "CVVCVCC + belch"]]
                  }
                 {:label "Finite_Verb_Paradigms_to_be_added"
-                 :common {:vmorphclass :FiniteToBeAdded
+                 :common {:vmorphClass :FiniteToBeAdded
                           :pos :Verb,
                           :person :To_be_added
                           :tam :To_be_added
