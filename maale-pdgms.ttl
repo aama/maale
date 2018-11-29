@@ -1,5 +1,5 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data//maale/maale-pdgms.edn
+#../aama-data/data/maale//maale-pdgms.edn
 
 @prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
@@ -298,19 +298,6 @@ mal:Restrictive aamas:lang aama:Maale .
 mal:Restrictive rdf:type mal:Proclass .
 mal:Restrictive rdfs:label "Restrictive" .
 
-#SCHEMATA: lexeme
-mal:lexeme aamas:lang aama:Maale .
-mal:Lexeme aamas:lang aama:Maale .
-mal:lexeme rdfs:domain aamas:Term .
-mal:Lexeme rdfs:label "lexeme exponents" .
-mal:lexeme rdfs:label "lexeme" .
-mal:lexeme rdfs:range mal:Lexeme .
-mal:Lexeme rdfs:subClassOf mal:MuExponent .
-mal:lexeme rdfs:subPropertyOf mal:muProperty .
-mal:mu aamas:lang aama:Maale .
-mal:mu rdf:type mal:Lexeme .
-mal:mu rdfs:label "mu" .
-
 #SCHEMATA: case
 mal:case aamas:lang aama:Maale .
 mal:Case aamas:lang aama:Maale .
@@ -469,17 +456,21 @@ mal:rootStructure aamas:pclass aamas:inflClass .
 aamas:inflClass rdfs:label "inflClass" .
 
 #LEXEMES:
-aama:Maale-mu a aamas:Lexeme ;
-	aamas:lang aama:Maale ;
-	rdfs:label "mu" ;
-	aamas:lemma "múʔ" ;
-	aamas:gloss "eat" ;
-	.
+
+##LexItems
 aama:Maale-ba a aamas:Lexeme ;
 	aamas:lang aama:Maale ;
 	rdfs:label "ba" ;
+	mal:pos mal:Verb ;
 	aamas:lemma "bá-" ;
 	aamas:gloss "not exist" ;
+	.
+aama:Maale-mu a aamas:Lexeme ;
+	aamas:lang aama:Maale ;
+	rdfs:label "mu" ;
+	mal:pos mal:Verb ;
+	aamas:lemma "múʔ" ;
+	aamas:gloss "eat" ;
 	.
 
 #TERMCLUSTER:  maale-VInflectionTemplate
@@ -490,7 +481,7 @@ mal:maale-VInflectionTemplate a aamas:Termcluster ;
 	rdfs:comment "Amha2001 Ch. 7 (summary p. 158);Ch. 8 (summary p. 202). Maale verb morphology does not include subject agreement%%with partial exception of imperative-optative. Inflectional template is:[VRoot (+ dervSuff)](+ AspectMarker) + moodClauseMarker. Attested combinations of aspect and clause suffixes given in paradigm. Template: AspSuff + ClauseSuff + Note." 
 	.
 
-aama:ID7adcd0aa-25ff-4925-b8ae-f3f6e03fafc7 a aamas:Term ;
+aama:IDc4ce0a99-2647-41d1-872c-5818ec4ba9e1 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -508,7 +499,7 @@ aama:ID7adcd0aa-25ff-4925-b8ae-f3f6e03fafc7 a aamas:Term ;
 	mal:clauseType mal:Causal ;
 	.
 
-aama:IDa4d56967-b79b-46b7-b6b5-da7c17689e5e a aamas:Term ;
+aama:ID4e1e8fd3-e49e-4684-a788-6f6bb309ee4d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -526,7 +517,7 @@ aama:IDa4d56967-b79b-46b7-b6b5-da7c17689e5e a aamas:Term ;
 	mal:clauseType mal:Causal ;
 	.
 
-aama:IDc61db2f9-f63c-49b7-b50a-e25afc81f007 a aamas:Term ;
+aama:ID65995da8-3d74-4e6e-9de6-f6f4157f6680 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -544,7 +535,7 @@ aama:IDc61db2f9-f63c-49b7-b50a-e25afc81f007 a aamas:Term ;
 	mal:clauseType mal:ClauseC ;
 	.
 
-aama:ID093bff38-8c34-4cc1-80a1-811d8ffee221 a aamas:Term ;
+aama:ID0c778862-831b-48e5-b2f7-0be4871fda1f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -562,7 +553,7 @@ aama:ID093bff38-8c34-4cc1-80a1-811d8ffee221 a aamas:Term ;
 	mal:clauseType mal:Conditional ;
 	.
 
-aama:IDf7e99eac-ea8b-44fc-bf08-85c2ed21bab8 a aamas:Term ;
+aama:IDef6dd089-5975-463d-8098-bdcf6ddfc7c7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -580,7 +571,7 @@ aama:IDf7e99eac-ea8b-44fc-bf08-85c2ed21bab8 a aamas:Term ;
 	mal:clauseType mal:Conditional ;
 	.
 
-aama:IDad4d0ec1-212a-4eaf-a5ca-f3b2fb65a6c5 a aamas:Term ;
+aama:IDe3738d4a-43c7-47ba-a3b8-5fc8048a726a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -598,7 +589,7 @@ aama:IDad4d0ec1-212a-4eaf-a5ca-f3b2fb65a6c5 a aamas:Term ;
 	mal:clauseType mal:Converb1 ;
 	.
 
-aama:IDb4edff7b-ad54-4656-8605-edc6ed373dc1 a aamas:Term ;
+aama:IDaac6b6b5-2194-4959-81b2-2dac5ba857c5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -616,7 +607,7 @@ aama:IDb4edff7b-ad54-4656-8605-edc6ed373dc1 a aamas:Term ;
 	mal:clauseType mal:Converb2 ;
 	.
 
-aama:IDf183a117-25ff-46b8-bbb5-6e611d7d5a4c a aamas:Term ;
+aama:IDafece772-352c-4dd8-9592-02fee822d2e8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -634,7 +625,7 @@ aama:IDf183a117-25ff-46b8-bbb5-6e611d7d5a4c a aamas:Term ;
 	mal:clauseType mal:Converb3 ;
 	.
 
-aama:ID7a3e7600-6041-4bee-a7d9-707217d98ea6 a aamas:Term ;
+aama:ID9ebb7f15-df08-4615-abda-68840c6ec61b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -652,7 +643,7 @@ aama:ID7a3e7600-6041-4bee-a7d9-707217d98ea6 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:IDba684a85-69ec-4dad-bfea-7d0e7cfa0267 a aamas:Term ;
+aama:IDa8c19196-32fa-4089-8a17-27fdcc4eef5e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -670,7 +661,7 @@ aama:IDba684a85-69ec-4dad-bfea-7d0e7cfa0267 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:ID426b46bf-fab3-4630-ae4e-554c5f813266 a aamas:Term ;
+aama:IDf11bf1f7-2ff1-4990-a105-4acf3bcacdee a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -688,7 +679,7 @@ aama:ID426b46bf-fab3-4630-ae4e-554c5f813266 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:IDcbdab308-8e6f-4f63-9bc2-e348c3d68667 a aamas:Term ;
+aama:ID0cc25e00-0925-4b21-89de-8a1d6f668653 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -706,7 +697,7 @@ aama:IDcbdab308-8e6f-4f63-9bc2-e348c3d68667 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:IDd4010612-11d5-4d87-a2c4-d005e1f6ff04 a aamas:Term ;
+aama:IDbe176008-8a93-4936-99d8-e0ae527e78d4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -724,7 +715,7 @@ aama:IDd4010612-11d5-4d87-a2c4-d005e1f6ff04 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:ID6cb2cf48-e896-4491-a3e7-1d1fe740d630 a aamas:Term ;
+aama:ID0da05323-a433-4f13-a847-498083c1f33a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -742,7 +733,7 @@ aama:ID6cb2cf48-e896-4491-a3e7-1d1fe740d630 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:IDfb24516b-0966-4a54-a14a-2be582318417 a aamas:Term ;
+aama:ID6bc5c8e4-fe76-471d-9c20-f8b354ca0b1f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -760,7 +751,7 @@ aama:IDfb24516b-0966-4a54-a14a-2be582318417 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:IDf7114318-5ed0-4f69-9bad-e62b7e714a3a a aamas:Term ;
+aama:ID27d086f2-3712-40fa-a7b3-ba899b61edd8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -778,7 +769,7 @@ aama:IDf7114318-5ed0-4f69-9bad-e62b7e714a3a a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:IDc6a2b533-efee-4c91-842f-240fd71d4cd4 a aamas:Term ;
+aama:IDe1c6dd70-f25b-41c9-8cbf-f334b2b81961 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -796,7 +787,7 @@ aama:IDc6a2b533-efee-4c91-842f-240fd71d4cd4 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:ID34e6467e-af49-4fc1-b19d-4cbe6d432e67 a aamas:Term ;
+aama:ID221c9e6c-9e90-4f06-899d-c7b689651e22 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -814,7 +805,7 @@ aama:ID34e6467e-af49-4fc1-b19d-4cbe6d432e67 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:IDd3713cb4-f5e4-423d-8bd3-2f6ee2817f10 a aamas:Term ;
+aama:IDb26e4848-5c04-4fa3-8f43-0274eded7c7c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -832,7 +823,7 @@ aama:IDd3713cb4-f5e4-423d-8bd3-2f6ee2817f10 a aamas:Term ;
 	mal:clauseType mal:Declarative ;
 	.
 
-aama:IDcb5c5287-041a-420c-b271-e8eb0bc7ad4e a aamas:Term ;
+aama:ID85c33b53-0980-4a3b-923e-9948ba55e43c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -850,7 +841,7 @@ aama:IDcb5c5287-041a-420c-b271-e8eb0bc7ad4e a aamas:Term ;
 	mal:clauseType mal:Imperative ;
 	.
 
-aama:ID18c6d569-f94b-4c17-bfa8-7b1a92f01746 a aamas:Term ;
+aama:ID5c545c6e-0868-41f9-8988-db74984791a3 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -868,7 +859,7 @@ aama:ID18c6d569-f94b-4c17-bfa8-7b1a92f01746 a aamas:Term ;
 	mal:clauseType mal:Imperative ;
 	.
 
-aama:ID0aab58aa-c6ef-4e30-82d2-e7f07e3e5bcf a aamas:Term ;
+aama:IDdc30d419-4422-4b05-8b94-71e9b3ea4471 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -886,7 +877,7 @@ aama:ID0aab58aa-c6ef-4e30-82d2-e7f07e3e5bcf a aamas:Term ;
 	mal:clauseType mal:Imperative ;
 	.
 
-aama:ID6b9eebd5-4725-42e1-88e2-0927a95e53aa a aamas:Term ;
+aama:ID24e691f8-0a60-4d5e-8429-7952b05b2004 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -904,7 +895,7 @@ aama:ID6b9eebd5-4725-42e1-88e2-0927a95e53aa a aamas:Term ;
 	mal:clauseType mal:Imperative ;
 	.
 
-aama:ID2a9b390a-e5ad-49b5-ad5c-05b100770dbf a aamas:Term ;
+aama:ID7192744c-781d-4580-8b23-f50e8dafb60e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -922,7 +913,7 @@ aama:ID2a9b390a-e5ad-49b5-ad5c-05b100770dbf a aamas:Term ;
 	mal:clauseType mal:InterrDubitative ;
 	.
 
-aama:ID50dc3a80-0d93-4273-ac0f-2bdbf7921f12 a aamas:Term ;
+aama:ID95d40e71-504f-455a-a343-d1143a575f31 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -940,7 +931,7 @@ aama:ID50dc3a80-0d93-4273-ac0f-2bdbf7921f12 a aamas:Term ;
 	mal:clauseType mal:InterrDubitative ;
 	.
 
-aama:IDae8daea9-c968-409e-ae1c-3f314c7f243a a aamas:Term ;
+aama:ID8cec7465-fa42-45c9-904b-65bec604f5e9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -958,7 +949,7 @@ aama:IDae8daea9-c968-409e-ae1c-3f314c7f243a a aamas:Term ;
 	mal:clauseType mal:InterrNonPolar ;
 	.
 
-aama:IDd5658c2b-18a5-4474-bfa5-12c804295b34 a aamas:Term ;
+aama:IDf3545798-6558-41f4-a7ad-91f8c9da7334 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -976,7 +967,7 @@ aama:IDd5658c2b-18a5-4474-bfa5-12c804295b34 a aamas:Term ;
 	mal:clauseType mal:InterrNonPolar ;
 	.
 
-aama:ID7f0e1ddc-e4a1-4830-928a-5836fea7849b a aamas:Term ;
+aama:IDbd894540-7011-4fb6-9d3e-d852d4d64bac a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -994,7 +985,7 @@ aama:ID7f0e1ddc-e4a1-4830-928a-5836fea7849b a aamas:Term ;
 	mal:clauseType mal:InterrNonPolar ;
 	.
 
-aama:ID3d150d28-381b-4cdf-971d-c05eea7c79e2 a aamas:Term ;
+aama:IDae32cd98-3471-4e50-b30c-012be9aafe48 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1012,7 +1003,7 @@ aama:ID3d150d28-381b-4cdf-971d-c05eea7c79e2 a aamas:Term ;
 	mal:clauseType mal:InterrPolar ;
 	.
 
-aama:ID14c1c1f9-b277-4134-8edf-76b20a68fd85 a aamas:Term ;
+aama:IDbb5a0f2c-e35d-45d3-a693-94f5e08b410d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1030,7 +1021,7 @@ aama:ID14c1c1f9-b277-4134-8edf-76b20a68fd85 a aamas:Term ;
 	mal:clauseType mal:InterrPolar ;
 	.
 
-aama:IDe82da982-b325-40fa-b245-fb61e84ff197 a aamas:Term ;
+aama:IDe4865581-252f-4dcb-9067-a147289c7320 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1048,7 +1039,7 @@ aama:IDe82da982-b325-40fa-b245-fb61e84ff197 a aamas:Term ;
 	mal:clauseType mal:InterrPolar ;
 	.
 
-aama:ID4d0d80cd-cf99-496f-9a48-e0329a8b5b99 a aamas:Term ;
+aama:IDae44e919-f693-491a-bcbc-f48e693d7bbd a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1066,7 +1057,7 @@ aama:ID4d0d80cd-cf99-496f-9a48-e0329a8b5b99 a aamas:Term ;
 	mal:clauseType mal:Optative ;
 	.
 
-aama:ID3f99d374-4155-4908-87cc-3bad661aa5d0 a aamas:Term ;
+aama:ID5db94814-a8ec-45a9-adf0-d4207d3e744b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1084,7 +1075,7 @@ aama:ID3f99d374-4155-4908-87cc-3bad661aa5d0 a aamas:Term ;
 	mal:clauseType mal:Optative ;
 	.
 
-aama:ID9c7374b3-7c5b-45b1-a119-6973725ff284 a aamas:Term ;
+aama:ID1552f8f6-57b7-4eb5-ab4c-717c68c0c919 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1102,7 +1093,7 @@ aama:ID9c7374b3-7c5b-45b1-a119-6973725ff284 a aamas:Term ;
 	mal:clauseType mal:Preventive ;
 	.
 
-aama:ID9782068d-2907-49a7-becd-fa7e4b4b5bb5 a aamas:Term ;
+aama:ID35f2cc7f-f4b1-40cc-ae69-a79ff3c8ca35 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1120,7 +1111,7 @@ aama:ID9782068d-2907-49a7-becd-fa7e4b4b5bb5 a aamas:Term ;
 	mal:clauseType mal:Preventive ;
 	.
 
-aama:ID96c4fdf4-d218-4e29-a3a5-64a9fcb6099b a aamas:Term ;
+aama:IDfaa60a4b-126a-4a42-ba9a-28537cc48e02 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1138,7 +1129,7 @@ aama:ID96c4fdf4-d218-4e29-a3a5-64a9fcb6099b a aamas:Term ;
 	mal:clauseType mal:Preventive ;
 	.
 
-aama:IDf39185a3-1a51-44cb-868b-9824092beaf9 a aamas:Term ;
+aama:IDbaf09aa6-28f8-48d2-b3e9-aa89915186fc a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1156,7 +1147,7 @@ aama:IDf39185a3-1a51-44cb-868b-9824092beaf9 a aamas:Term ;
 	mal:clauseType mal:Purposive1 ;
 	.
 
-aama:ID6da77d36-a015-4351-9537-d039a8e1f917 a aamas:Term ;
+aama:IDbaaac270-91ab-4d59-a4e1-a7e95227a55b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1174,7 +1165,7 @@ aama:ID6da77d36-a015-4351-9537-d039a8e1f917 a aamas:Term ;
 	mal:clauseType mal:Purposive1 ;
 	.
 
-aama:IDc686299e-a92f-4c57-bb53-f30ab428bbcb a aamas:Term ;
+aama:ID0a14666e-2af6-4b88-8e89-a23f8db39ec7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1192,7 +1183,7 @@ aama:IDc686299e-a92f-4c57-bb53-f30ab428bbcb a aamas:Term ;
 	mal:clauseType mal:Purposive2 ;
 	.
 
-aama:IDfb055581-79dc-4a9e-85bc-4b3deb43c00d a aamas:Term ;
+aama:IDdbbe086f-ed57-45ae-99f5-6a321adbd04c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1210,7 +1201,7 @@ aama:IDfb055581-79dc-4a9e-85bc-4b3deb43c00d a aamas:Term ;
 	mal:clauseType mal:Simultaneous ;
 	.
 
-aama:ID16a39e26-205a-47ef-ae58-1b27f6b0fe24 a aamas:Term ;
+aama:ID3f99cdeb-38e7-4dbe-8daf-18212504d0e6 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1228,7 +1219,7 @@ aama:ID16a39e26-205a-47ef-ae58-1b27f6b0fe24 a aamas:Term ;
 	mal:clauseType mal:Temporal1 ;
 	.
 
-aama:ID7ac12236-d1c0-48ab-bd93-a6b88acf43b1 a aamas:Term ;
+aama:ID8779784c-ed17-4b0f-98a2-765e6248dbe9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
 	mal:vmorphClass mal:Finite ;
@@ -1254,7 +1245,7 @@ mal:maale-P2ary a aamas:Termcluster ;
 	rdfs:comment "Amha2001 #4.2." 
 	.
 
-aama:ID8c880aa7-addd-49c9-97d9-2f3aa00ede7b a aamas:Term ;
+aama:IDa5877c3a-387a-4a92-95af-dfe32ff1db16 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1267,7 +1258,7 @@ aama:ID8c880aa7-addd-49c9-97d9-2f3aa00ede7b a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID420ae8f1-5d11-4e15-8cd2-401b3d539fc0 a aamas:Term ;
+aama:ID496b4b95-ab54-41c1-ae7a-5b18c8bc18bf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1280,7 +1271,7 @@ aama:ID420ae8f1-5d11-4e15-8cd2-401b3d539fc0 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID3c08e88d-c79b-401c-9c15-9b1d04cee3e0 a aamas:Term ;
+aama:ID7316764e-e9a5-465c-944f-f60d67251512 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1293,7 +1284,7 @@ aama:ID3c08e88d-c79b-401c-9c15-9b1d04cee3e0 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:IDeb02c437-437f-40c8-8c60-eb56fb17462e a aamas:Term ;
+aama:IDc0b3fdf1-4e0b-42b0-b438-9d0fce173664 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1306,7 +1297,7 @@ aama:IDeb02c437-437f-40c8-8c60-eb56fb17462e a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:IDdb2ee4c0-9ecf-435e-b6f9-63761368df64 a aamas:Term ;
+aama:ID51e6fdfa-ba50-412b-acde-4e3cd4ceebeb a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1319,7 +1310,7 @@ aama:IDdb2ee4c0-9ecf-435e-b6f9-63761368df64 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDa48cb009-ae37-42ce-b0cd-1b59837420ce a aamas:Term ;
+aama:ID5a142d77-18fe-4bb6-9d51-4c5df6238a0b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1332,7 +1323,7 @@ aama:IDa48cb009-ae37-42ce-b0cd-1b59837420ce a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDff3cc52f-d555-415a-ab76-dfd285b6d60d a aamas:Term ;
+aama:ID219b9138-9c33-4a2b-9f85-5d4885866b95 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1345,7 +1336,7 @@ aama:IDff3cc52f-d555-415a-ab76-dfd285b6d60d a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDe54df0d9-ba16-434b-a735-2e0b4d191a51 a aamas:Term ;
+aama:ID8c779292-7169-4de7-90c5-45cdd0048313 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1358,7 +1349,7 @@ aama:IDe54df0d9-ba16-434b-a735-2e0b4d191a51 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDcb85a580-22e4-4880-928d-164a2eb2f385 a aamas:Term ;
+aama:IDe2228916-4c18-4c8b-8334-11a9dbacf6a9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1371,7 +1362,7 @@ aama:IDcb85a580-22e4-4880-928d-164a2eb2f385 a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:IDc95d71f2-fd8e-40db-90d3-7691e48edc01 a aamas:Term ;
+aama:IDba82f4ab-b65b-471d-abb4-7973f12f66e5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1384,7 +1375,7 @@ aama:IDc95d71f2-fd8e-40db-90d3-7691e48edc01 a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:IDaf0c3be5-fd05-45de-9625-acb461cfb32d a aamas:Term ;
+aama:ID2b222a45-1be6-49bb-a26a-6b307217b587 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1397,7 +1388,7 @@ aama:IDaf0c3be5-fd05-45de-9625-acb461cfb32d a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:ID34370443-eaa9-496a-9c01-fd93d5155aca a aamas:Term ;
+aama:IDe370daaf-4aa0-4364-8438-a8a0f6256cbf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
 	mal:pos mal:Pronoun ;
@@ -1418,7 +1409,7 @@ mal:maale-PBasicPro a aamas:Termcluster ;
 	rdfs:comment "Amha2001 #4.1" 
 	.
 
-aama:ID3c1ca3d4-eb89-482e-95ab-f45f847a031f a aamas:Term ;
+aama:IDafe34be4-56f4-4d04-8261-b550feef0c5c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1431,7 +1422,7 @@ aama:ID3c1ca3d4-eb89-482e-95ab-f45f847a031f a aamas:Term ;
 	mal:case mal:CaseC ;
 	.
 
-aama:ID4760bc61-ec10-4a8a-8b06-dfddfd4e4745 a aamas:Term ;
+aama:ID7601f1c1-b03d-4a44-b2fa-4e842db72a2e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1444,7 +1435,7 @@ aama:ID4760bc61-ec10-4a8a-8b06-dfddfd4e4745 a aamas:Term ;
 	mal:case mal:CaseC ;
 	.
 
-aama:IDcaf87e50-7988-4900-a5f5-e151a0a53cbc a aamas:Term ;
+aama:ID4f8a6bfe-47d6-444a-8343-68e60d90c072 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1457,7 +1448,7 @@ aama:IDcaf87e50-7988-4900-a5f5-e151a0a53cbc a aamas:Term ;
 	mal:case mal:CaseC ;
 	.
 
-aama:ID37535ba3-8997-48fa-b316-55f1a5181694 a aamas:Term ;
+aama:ID12850927-f114-40a0-b124-b8cb4ad69c9a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1470,7 +1461,7 @@ aama:ID37535ba3-8997-48fa-b316-55f1a5181694 a aamas:Term ;
 	mal:case mal:CaseC ;
 	.
 
-aama:IDd5c5342c-1de0-4d8f-8f95-7bb6c9f3f88d a aamas:Term ;
+aama:ID15c42327-557d-4dae-9d2e-8da3c1f3a630 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1483,7 +1474,7 @@ aama:IDd5c5342c-1de0-4d8f-8f95-7bb6c9f3f88d a aamas:Term ;
 	mal:case mal:CaseC ;
 	.
 
-aama:ID9fd49e47-d1d0-4d54-b1dc-2f06647846b9 a aamas:Term ;
+aama:IDd55cfad3-0d3b-4bc0-82f1-caff26502d6a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1496,7 +1487,7 @@ aama:ID9fd49e47-d1d0-4d54-b1dc-2f06647846b9 a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:IDd5d224af-7422-4732-a453-8294d6570eeb a aamas:Term ;
+aama:ID6db4fec5-639b-44f5-9a8b-0e2a1cb7d137 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1509,7 +1500,7 @@ aama:IDd5d224af-7422-4732-a453-8294d6570eeb a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:IDf19f4177-8912-44f8-ba62-534e784c353b a aamas:Term ;
+aama:ID71cd35c6-d0c5-4902-8d72-39c868552829 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1522,7 +1513,7 @@ aama:IDf19f4177-8912-44f8-ba62-534e784c353b a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:ID0fd4d343-5391-4d05-8a27-b9b098c298a8 a aamas:Term ;
+aama:IDb2e37cd5-439f-43ba-827a-6d79c30c28d3 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
 	mal:pos mal:Pronoun ;
@@ -1543,7 +1534,7 @@ mal:maale-PCaseMarking a aamas:Termcluster ;
 	rdfs:comment "Amha2001 #4.6" 
 	.
 
-aama:IDc2cc022f-0931-4788-9a0f-cf6bdc2cf19d a aamas:Term ;
+aama:ID7fa71309-894d-4e67-b5b0-35f48aa1e4c1 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1556,7 +1547,7 @@ aama:IDc2cc022f-0931-4788-9a0f-cf6bdc2cf19d a aamas:Term ;
 	mal:case mal:Ablative ;
 	.
 
-aama:ID3ce8c2f6-e161-4bd4-b7c7-19dda332059b a aamas:Term ;
+aama:IDdbb37da2-4d4b-4648-8e98-a19b4fe237a4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1569,7 +1560,7 @@ aama:ID3ce8c2f6-e161-4bd4-b7c7-19dda332059b a aamas:Term ;
 	mal:case mal:Ablative ;
 	.
 
-aama:ID17d38936-8a8c-4f4f-90c3-0b5c5ad6298e a aamas:Term ;
+aama:ID3bcb468e-7801-4478-99c4-38fe07b1cb74 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1582,7 +1573,7 @@ aama:ID17d38936-8a8c-4f4f-90c3-0b5c5ad6298e a aamas:Term ;
 	mal:case mal:Ablative ;
 	.
 
-aama:IDe5ee9d2a-6cfb-4a55-912f-4b70a9c1e5e5 a aamas:Term ;
+aama:ID0162a2b7-a433-45d0-bf8f-847f9cb5bd8b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1595,7 +1586,7 @@ aama:IDe5ee9d2a-6cfb-4a55-912f-4b70a9c1e5e5 a aamas:Term ;
 	mal:case mal:Ablative ;
 	.
 
-aama:ID7d538aa5-da1d-49c1-9789-45e620c7f7af a aamas:Term ;
+aama:IDb29ec145-9f31-4821-8e35-ebef76e17a9c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1608,7 +1599,7 @@ aama:ID7d538aa5-da1d-49c1-9789-45e620c7f7af a aamas:Term ;
 	mal:case mal:Ablative ;
 	.
 
-aama:IDb7b19c93-142b-4e7a-861d-8466ceca1a95 a aamas:Term ;
+aama:IDb8d6a4fd-f02f-49c8-8916-3e9de109332b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1621,7 +1612,7 @@ aama:IDb7b19c93-142b-4e7a-861d-8466ceca1a95 a aamas:Term ;
 	mal:case mal:Ablative ;
 	.
 
-aama:IDa96fe505-5973-4763-9938-ffcbddfe7634 a aamas:Term ;
+aama:IDeb70ae72-d6c3-4a22-9400-aaca87d29afd a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1634,7 +1625,7 @@ aama:IDa96fe505-5973-4763-9938-ffcbddfe7634 a aamas:Term ;
 	mal:case mal:Ablative ;
 	.
 
-aama:ID0d351898-1bd2-478d-a78f-2d88704baf62 a aamas:Term ;
+aama:ID01750d9c-a201-423e-a84f-984badb3c857 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1647,7 +1638,7 @@ aama:ID0d351898-1bd2-478d-a78f-2d88704baf62 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:IDf551013e-a36b-43bc-be77-e465370c1134 a aamas:Term ;
+aama:ID2135fbb7-cb80-4451-8a41-8da6610c12e2 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1660,7 +1651,7 @@ aama:IDf551013e-a36b-43bc-be77-e465370c1134 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:IDb12168ce-c1db-4102-9375-cc376f1c450c a aamas:Term ;
+aama:ID3b2378e6-a484-445b-b74c-7979cdbabd34 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1673,7 +1664,7 @@ aama:IDb12168ce-c1db-4102-9375-cc376f1c450c a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID5ca2522f-5784-4976-afc2-05ed2bda4b87 a aamas:Term ;
+aama:IDa8abfce7-bbcd-494a-b778-da554eee746b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1686,7 +1677,7 @@ aama:ID5ca2522f-5784-4976-afc2-05ed2bda4b87 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID4c16922a-3c67-4bc3-98d7-be54ebeb82df a aamas:Term ;
+aama:ID44cbded1-1995-4f01-974a-2bc23bacfd4e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1699,7 +1690,7 @@ aama:ID4c16922a-3c67-4bc3-98d7-be54ebeb82df a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID98e4434c-1f81-4544-b47b-9533fe36b7d8 a aamas:Term ;
+aama:ID46c32ba7-d578-4ed7-b8c1-212811f59519 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1712,7 +1703,7 @@ aama:ID98e4434c-1f81-4544-b47b-9533fe36b7d8 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID544c6f4a-9a7e-4ba9-99ba-4c680ca2d7ac a aamas:Term ;
+aama:ID51caf9a7-4a56-402f-911c-6bfcfa3762e8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1725,7 +1716,7 @@ aama:ID544c6f4a-9a7e-4ba9-99ba-4c680ca2d7ac a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID98b7041f-62de-49ad-bdd3-0d6b7bd1b900 a aamas:Term ;
+aama:IDc3abb224-e5c4-4e93-bf0e-a4fac5ddcd0f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1738,7 +1729,7 @@ aama:ID98b7041f-62de-49ad-bdd3-0d6b7bd1b900 a aamas:Term ;
 	mal:case mal:Dative ;
 	.
 
-aama:ID4fd31733-e1a1-4c08-9155-aaf11e5a18c3 a aamas:Term ;
+aama:ID180352f0-4650-49c9-9e45-8e203d639808 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1751,7 +1742,7 @@ aama:ID4fd31733-e1a1-4c08-9155-aaf11e5a18c3 a aamas:Term ;
 	mal:case mal:Dative ;
 	.
 
-aama:ID38009714-d075-434f-8948-a10f2728da2d a aamas:Term ;
+aama:IDaa562ae8-bb2f-423d-9ed7-ad1781b5f48f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1764,7 +1755,7 @@ aama:ID38009714-d075-434f-8948-a10f2728da2d a aamas:Term ;
 	mal:case mal:Dative ;
 	.
 
-aama:ID4f55ffcb-93c4-4723-a606-3220d2c56b2f a aamas:Term ;
+aama:IDe33a7af8-2a57-40c2-ac52-1446d93a49c8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1777,7 +1768,7 @@ aama:ID4f55ffcb-93c4-4723-a606-3220d2c56b2f a aamas:Term ;
 	mal:case mal:Dative ;
 	.
 
-aama:ID374f1e98-ce2c-4a84-9083-74163d5538cd a aamas:Term ;
+aama:IDce68d024-eb76-4e4b-bd84-33ded92a8051 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1790,7 +1781,7 @@ aama:ID374f1e98-ce2c-4a84-9083-74163d5538cd a aamas:Term ;
 	mal:case mal:Dative ;
 	.
 
-aama:ID8483231f-1f27-45cd-93da-180b0dff5561 a aamas:Term ;
+aama:ID657248e0-8e10-4adb-9c61-8bdc0a02acfd a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1803,7 +1794,7 @@ aama:ID8483231f-1f27-45cd-93da-180b0dff5561 a aamas:Term ;
 	mal:case mal:Dative ;
 	.
 
-aama:ID1eccadb4-06a4-4419-8801-69e698a17ff2 a aamas:Term ;
+aama:IDb7e7c1c7-3f94-4a2d-acbb-7599ad3cb5bd a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1816,7 +1807,7 @@ aama:ID1eccadb4-06a4-4419-8801-69e698a17ff2 a aamas:Term ;
 	mal:case mal:Dative ;
 	.
 
-aama:ID241a8af9-3418-4eaf-ba9c-d0c8c9b093d3 a aamas:Term ;
+aama:IDdc0a88e4-334a-4bee-bd13-f8397fc82998 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1829,7 +1820,7 @@ aama:ID241a8af9-3418-4eaf-ba9c-d0c8c9b093d3 a aamas:Term ;
 	mal:case mal:Instrumental ;
 	.
 
-aama:ID139c7368-d70b-486b-a0c9-fed3c4560d69 a aamas:Term ;
+aama:IDa9f318c9-9dc0-45c9-b72c-b20606806b6c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1842,7 +1833,7 @@ aama:ID139c7368-d70b-486b-a0c9-fed3c4560d69 a aamas:Term ;
 	mal:case mal:Instrumental ;
 	.
 
-aama:IDec5362df-9663-4657-9900-08f3abbd09b8 a aamas:Term ;
+aama:ID6224a34d-435b-473e-a248-8b55fa42ec6b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1855,7 +1846,7 @@ aama:IDec5362df-9663-4657-9900-08f3abbd09b8 a aamas:Term ;
 	mal:case mal:Instrumental ;
 	.
 
-aama:ID033d2b9d-4a70-4c47-b34d-18c5dc355c3e a aamas:Term ;
+aama:ID9dea9777-87b8-4097-9098-e9f8e9938f87 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1868,7 +1859,7 @@ aama:ID033d2b9d-4a70-4c47-b34d-18c5dc355c3e a aamas:Term ;
 	mal:case mal:Instrumental ;
 	.
 
-aama:IDad51350a-51c6-4044-89ab-026126d6031a a aamas:Term ;
+aama:IDce685028-bdc4-4982-a333-71de94225ebe a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1881,7 +1872,7 @@ aama:IDad51350a-51c6-4044-89ab-026126d6031a a aamas:Term ;
 	mal:case mal:Instrumental ;
 	.
 
-aama:ID543e6ad2-bf53-4204-b367-561c5967837a a aamas:Term ;
+aama:IDfe434cca-b0b9-443b-b448-6b881bd1ddd2 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1894,7 +1885,7 @@ aama:ID543e6ad2-bf53-4204-b367-561c5967837a a aamas:Term ;
 	mal:case mal:Instrumental ;
 	.
 
-aama:ID21cb34da-5b5e-4bdd-8d16-df450ecb3d85 a aamas:Term ;
+aama:ID61c07aef-340b-4b1a-a4b2-8158caebf9a7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1907,7 +1898,7 @@ aama:ID21cb34da-5b5e-4bdd-8d16-df450ecb3d85 a aamas:Term ;
 	mal:case mal:Instrumental ;
 	.
 
-aama:IDb05183dc-56a6-4778-a874-beba8558d68d a aamas:Term ;
+aama:ID2d4eea77-2105-43c8-85c6-5fdfbac48c32 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1920,7 +1911,7 @@ aama:IDb05183dc-56a6-4778-a874-beba8558d68d a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:ID636e5877-254e-49c0-8526-069a22843dfa a aamas:Term ;
+aama:IDd6290653-a514-45db-96ef-55bc821b021c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1933,7 +1924,7 @@ aama:ID636e5877-254e-49c0-8526-069a22843dfa a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:ID4e0362ea-28ce-4587-947c-324753c5574e a aamas:Term ;
+aama:ID8909f83d-4f45-4f22-98d5-1005d17c5c86 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1946,7 +1937,7 @@ aama:ID4e0362ea-28ce-4587-947c-324753c5574e a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:ID00b3e34a-1120-4621-be7e-04dd469fcefe a aamas:Term ;
+aama:ID120b03bf-dab6-486f-b6c1-fe1ac8d1c380 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1959,7 +1950,7 @@ aama:ID00b3e34a-1120-4621-be7e-04dd469fcefe a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDa443d5bd-b656-4f3e-a7c7-e13363374680 a aamas:Term ;
+aama:IDd502d138-17ea-4130-a33e-e6e68e8cb1b1 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1972,7 +1963,7 @@ aama:IDa443d5bd-b656-4f3e-a7c7-e13363374680 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:ID8b1ebdef-dd05-46e1-9914-e0d0ea8760c5 a aamas:Term ;
+aama:ID2594132c-0a2d-4697-9d4a-a7a489158e04 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -1985,7 +1976,7 @@ aama:ID8b1ebdef-dd05-46e1-9914-e0d0ea8760c5 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDc2c81932-50f0-4b41-8460-17870e9a76b4 a aamas:Term ;
+aama:ID762b539e-3ed6-4ba6-9aaf-7c19bf005c3f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
 	mal:pos mal:Pronoun ;
@@ -2008,7 +1999,7 @@ mal:maale-PPoss a aamas:Termcluster ;
             noun involving unknown possession" 
 	.
 
-aama:IDa760e1c0-677b-4d98-bbf7-d6b328916571 a aamas:Term ;
+aama:ID21ebcb5b-5e6e-4e96-8816-83c904ec7377 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2022,7 +2013,7 @@ aama:IDa760e1c0-677b-4d98-bbf7-d6b328916571 a aamas:Term ;
 	mal:possType mal:Poss1 ;
 	.
 
-aama:IDb5ec2d16-e42c-46fe-9e16-a88a074a0794 a aamas:Term ;
+aama:ID0afaf932-0929-4349-b9dd-2bfbecf78951 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2036,7 +2027,7 @@ aama:IDb5ec2d16-e42c-46fe-9e16-a88a074a0794 a aamas:Term ;
 	mal:possType mal:Poss1 ;
 	.
 
-aama:ID5a7cd83c-edee-4b02-98bc-0444bbe25392 a aamas:Term ;
+aama:ID96e2471a-3fb7-42be-bce6-bca9f274f05c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2050,7 +2041,7 @@ aama:ID5a7cd83c-edee-4b02-98bc-0444bbe25392 a aamas:Term ;
 	mal:possType mal:Poss1 ;
 	.
 
-aama:ID6d2f102b-1d1f-4beb-97e4-45f17c41d7dc a aamas:Term ;
+aama:ID3a07f886-5d7c-4366-a09a-a7688e72287d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2064,7 +2055,7 @@ aama:ID6d2f102b-1d1f-4beb-97e4-45f17c41d7dc a aamas:Term ;
 	mal:possType mal:Poss1 ;
 	.
 
-aama:ID89ad1d78-becf-4bc2-9276-fbbcc69b4585 a aamas:Term ;
+aama:IDb76a3925-2882-44f4-bc52-409427a88fb5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2078,7 +2069,7 @@ aama:ID89ad1d78-becf-4bc2-9276-fbbcc69b4585 a aamas:Term ;
 	mal:possType mal:Poss1 ;
 	.
 
-aama:IDa65b60d5-6c0f-4435-ba46-d4d1623251a5 a aamas:Term ;
+aama:ID789a6873-20d1-4301-9412-4beb74eefb3c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2092,7 +2083,7 @@ aama:IDa65b60d5-6c0f-4435-ba46-d4d1623251a5 a aamas:Term ;
 	mal:possType mal:Poss1 ;
 	.
 
-aama:ID8e9d20e8-56d9-4242-b2cf-6457f3e299d4 a aamas:Term ;
+aama:IDf3cd7b2a-36e9-4f86-8309-33769c59bbaf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2106,7 +2097,7 @@ aama:ID8e9d20e8-56d9-4242-b2cf-6457f3e299d4 a aamas:Term ;
 	mal:possType mal:Poss1 ;
 	.
 
-aama:IDa3f96272-2e4d-4d2e-b95e-d5ee84c4e691 a aamas:Term ;
+aama:IDfe84216e-8f90-4c96-a383-a481be566e00 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2120,7 +2111,7 @@ aama:IDa3f96272-2e4d-4d2e-b95e-d5ee84c4e691 a aamas:Term ;
 	mal:possType mal:Poss2 ;
 	.
 
-aama:IDfd45b9aa-8704-402a-912d-a2946cd362d0 a aamas:Term ;
+aama:IDe61084d9-df33-4a00-ac10-ff17ebe63aa6 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2134,7 +2125,7 @@ aama:IDfd45b9aa-8704-402a-912d-a2946cd362d0 a aamas:Term ;
 	mal:possType mal:Poss2 ;
 	.
 
-aama:ID11e5aa1b-fc2f-4245-b0a9-571e049be1aa a aamas:Term ;
+aama:ID865297f4-a960-4196-a585-bf071ef70e3f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2148,7 +2139,7 @@ aama:ID11e5aa1b-fc2f-4245-b0a9-571e049be1aa a aamas:Term ;
 	mal:possType mal:Poss2 ;
 	.
 
-aama:ID5b632a26-32b1-4bb2-87ae-8fecb696f436 a aamas:Term ;
+aama:ID927699e3-3ce3-44fd-8e71-69357ae5ed1a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2162,7 +2153,7 @@ aama:ID5b632a26-32b1-4bb2-87ae-8fecb696f436 a aamas:Term ;
 	mal:possType mal:Poss2 ;
 	.
 
-aama:ID1f97ba2d-0c4d-47ce-917c-7d5c579451b3 a aamas:Term ;
+aama:ID2a756bfd-2804-4d04-aedb-9044b32700c4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2176,7 +2167,7 @@ aama:ID1f97ba2d-0c4d-47ce-917c-7d5c579451b3 a aamas:Term ;
 	mal:possType mal:Poss2 ;
 	.
 
-aama:ID47afe527-5c6b-4fa1-8053-0e14ac3a7822 a aamas:Term ;
+aama:IDd4c61355-3b1a-4c48-993b-3fdceeafb0e5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2190,7 +2181,7 @@ aama:ID47afe527-5c6b-4fa1-8053-0e14ac3a7822 a aamas:Term ;
 	mal:possType mal:Poss2 ;
 	.
 
-aama:IDa1eda1e5-771d-4992-a758-504b42e665e5 a aamas:Term ;
+aama:ID8f4d4444-0a83-4a7d-9cda-52f7b3204554 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2204,7 +2195,7 @@ aama:IDa1eda1e5-771d-4992-a758-504b42e665e5 a aamas:Term ;
 	mal:possType mal:Poss2 ;
 	.
 
-aama:ID5b2ec610-084b-4792-924a-ce7fd02d7980 a aamas:Term ;
+aama:ID963f81c7-7e43-4804-8061-a51b2e91543d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2218,7 +2209,7 @@ aama:ID5b2ec610-084b-4792-924a-ce7fd02d7980 a aamas:Term ;
 	mal:possType mal:PossNom1 ;
 	.
 
-aama:IDdce912b4-a44c-44ff-a866-6fbe33634ece a aamas:Term ;
+aama:IDf4c67ce6-5e1b-49cb-8ed6-1216a5726bf4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2232,7 +2223,7 @@ aama:IDdce912b4-a44c-44ff-a866-6fbe33634ece a aamas:Term ;
 	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID3aaf64f9-ef8d-4530-a19d-e834811aa271 a aamas:Term ;
+aama:ID9e90a804-e1aa-40e5-ad69-ac9b00a2e5bf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2246,7 +2237,7 @@ aama:ID3aaf64f9-ef8d-4530-a19d-e834811aa271 a aamas:Term ;
 	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID5e7b59f2-d531-4b22-a294-a3e72894347a a aamas:Term ;
+aama:ID17657450-95de-4d86-bb27-5c651c89d444 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2260,7 +2251,7 @@ aama:ID5e7b59f2-d531-4b22-a294-a3e72894347a a aamas:Term ;
 	mal:possType mal:PossNom1 ;
 	.
 
-aama:IDc5181b2f-98b7-4a7c-8947-4f0270588a2e a aamas:Term ;
+aama:ID50d42de3-f9f1-49a7-bdc4-2b855d22471a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2274,7 +2265,7 @@ aama:IDc5181b2f-98b7-4a7c-8947-4f0270588a2e a aamas:Term ;
 	mal:possType mal:PossNom1 ;
 	.
 
-aama:IDbad062a0-aeb2-4256-b46e-6a8ead899f80 a aamas:Term ;
+aama:ID3bd8ed6f-d857-4650-bf6b-87791f955284 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2288,7 +2279,7 @@ aama:IDbad062a0-aeb2-4256-b46e-6a8ead899f80 a aamas:Term ;
 	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID060e9250-4a73-46f4-a368-cc7c3d5a88f5 a aamas:Term ;
+aama:ID266cc537-b4a8-4cdc-b553-9c26f40e2105 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2302,7 +2293,7 @@ aama:ID060e9250-4a73-46f4-a368-cc7c3d5a88f5 a aamas:Term ;
 	mal:possType mal:PossNom1 ;
 	.
 
-aama:IDeb7a1de4-b03c-4334-b6fa-eef5ba1e8a10 a aamas:Term ;
+aama:IDb27013a5-e047-421a-bb44-10c24c382e37 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2316,7 +2307,7 @@ aama:IDeb7a1de4-b03c-4334-b6fa-eef5ba1e8a10 a aamas:Term ;
 	mal:possType mal:PossNom2 ;
 	.
 
-aama:ID428059eb-8f01-47cc-9dcd-96222ff50530 a aamas:Term ;
+aama:ID276185a4-120d-49e2-a65c-68494584aef8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2330,7 +2321,7 @@ aama:ID428059eb-8f01-47cc-9dcd-96222ff50530 a aamas:Term ;
 	mal:possType mal:PossNom2 ;
 	.
 
-aama:ID21d66c5b-83ce-4811-9a0b-0d887e259104 a aamas:Term ;
+aama:ID6a0d0021-cf35-4e60-b27b-ef3892cd483a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2344,7 +2335,7 @@ aama:ID21d66c5b-83ce-4811-9a0b-0d887e259104 a aamas:Term ;
 	mal:possType mal:PossNom2 ;
 	.
 
-aama:ID915a4273-1ad8-49ef-9359-6f864f6de8dd a aamas:Term ;
+aama:ID8383c61e-25fc-48a8-b3f2-677528384d1b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2358,7 +2349,7 @@ aama:ID915a4273-1ad8-49ef-9359-6f864f6de8dd a aamas:Term ;
 	mal:possType mal:PossNom2 ;
 	.
 
-aama:IDc47f8683-5237-4fea-b1a6-69047e2863e9 a aamas:Term ;
+aama:ID48999a3b-e8e2-4c76-9af6-c606f7cff179 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2372,7 +2363,7 @@ aama:IDc47f8683-5237-4fea-b1a6-69047e2863e9 a aamas:Term ;
 	mal:possType mal:PossNom2 ;
 	.
 
-aama:IDd2c5402f-f1ec-4351-9a0d-4aec59557cf8 a aamas:Term ;
+aama:IDd924dfcc-c71a-47d3-8f29-cb247dce824d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2386,7 +2377,7 @@ aama:IDd2c5402f-f1ec-4351-9a0d-4aec59557cf8 a aamas:Term ;
 	mal:possType mal:PossNom2 ;
 	.
 
-aama:IDb665e76a-a113-4738-96a0-466c5841055b a aamas:Term ;
+aama:ID489d91ba-0352-4297-a034-991668186090 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
@@ -2411,7 +2402,7 @@ mal:maale-PProInd a aamas:Termcluster ;
             sentences(p. 87)." 
 	.
 
-aama:ID6b694596-b217-476f-889f-911d8b209eb0 a aamas:Term ;
+aama:ID91aac269-2fcf-4098-87f7-d2ebd65c1be5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2424,7 +2415,7 @@ aama:ID6b694596-b217-476f-889f-911d8b209eb0 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:IDe8f8f533-eeeb-449f-b3b0-59e1e89a3e1f a aamas:Term ;
+aama:ID206fe3be-5a43-4d77-afaf-7d2b53dce947 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2437,7 +2428,7 @@ aama:IDe8f8f533-eeeb-449f-b3b0-59e1e89a3e1f a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:IDb5384fa3-2829-4d67-8624-968f75f622ff a aamas:Term ;
+aama:ID68d86389-78f7-4026-b5ed-0ab6ce1d27a4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2450,7 +2441,7 @@ aama:IDb5384fa3-2829-4d67-8624-968f75f622ff a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID24f4ade2-94c4-4e97-93fe-17667af007f5 a aamas:Term ;
+aama:IDfce9f387-c760-4853-9ca5-6ce931080cbf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2463,7 +2454,7 @@ aama:ID24f4ade2-94c4-4e97-93fe-17667af007f5 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID00f8be35-02b9-42f2-a867-884fb533a29a a aamas:Term ;
+aama:ID40c0686f-2475-4d03-9c40-04ac33b791f9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2476,7 +2467,7 @@ aama:ID00f8be35-02b9-42f2-a867-884fb533a29a a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:IDe911a641-ac86-449c-a576-16424f869378 a aamas:Term ;
+aama:ID3b841a37-ee80-4ac1-ba6f-4a6fc25c57c1 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2489,7 +2480,7 @@ aama:IDe911a641-ac86-449c-a576-16424f869378 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID879db1d3-1bf6-4786-b31a-ef5965bd6326 a aamas:Term ;
+aama:ID402e6f7c-5e27-4572-98b6-3ad1aa2bf570 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2502,7 +2493,7 @@ aama:ID879db1d3-1bf6-4786-b31a-ef5965bd6326 a aamas:Term ;
 	mal:case mal:Absolutive ;
 	.
 
-aama:ID7b12338e-384c-4a52-b932-f16782de4a04 a aamas:Term ;
+aama:IDe2342d66-9ed0-4c02-a537-d7ced2cb4d71 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2515,7 +2506,7 @@ aama:ID7b12338e-384c-4a52-b932-f16782de4a04 a aamas:Term ;
 	mal:case mal:CaseC ;
 	.
 
-aama:ID34ea2d7a-9856-443d-b936-0d5ae2eb2ec4 a aamas:Term ;
+aama:ID0ab38a6e-e1ed-40f0-9769-56038f71aa01 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2528,7 +2519,7 @@ aama:ID34ea2d7a-9856-443d-b936-0d5ae2eb2ec4 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:ID460abe5d-7603-4ed5-b456-d5254e94b61a a aamas:Term ;
+aama:IDf7796c26-fa32-418f-8b49-e8797d14f32a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2541,7 +2532,7 @@ aama:ID460abe5d-7603-4ed5-b456-d5254e94b61a a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDf9dee4d7-bd45-4e92-8762-894c99d3f479 a aamas:Term ;
+aama:IDbd27ac3e-f8c6-49bf-a88b-21c39c575032 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2554,7 +2545,7 @@ aama:IDf9dee4d7-bd45-4e92-8762-894c99d3f479 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDa2594d88-976c-4048-92a1-b35f953438c0 a aamas:Term ;
+aama:ID023bdf21-74c9-409d-9d5a-2a43bb917c4d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2567,7 +2558,7 @@ aama:IDa2594d88-976c-4048-92a1-b35f953438c0 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:ID2c99284f-5a21-4efb-9b3e-76867c2fe112 a aamas:Term ;
+aama:ID56ee42c3-3889-4587-ae97-631fe5cafe81 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2580,7 +2571,7 @@ aama:ID2c99284f-5a21-4efb-9b3e-76867c2fe112 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:IDf681bb62-f5bc-4b67-8243-bfcb53b59c95 a aamas:Term ;
+aama:IDaec6f0a7-af9b-4084-8b11-d333f29b6057 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2593,7 +2584,7 @@ aama:IDf681bb62-f5bc-4b67-8243-bfcb53b59c95 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:ID95714e39-21a2-4f2d-bc99-b0c749a33b18 a aamas:Term ;
+aama:ID51026b59-8a57-4a88-b292-c3dc6f3e0d86 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2606,7 +2597,7 @@ aama:ID95714e39-21a2-4f2d-bc99-b0c749a33b18 a aamas:Term ;
 	mal:case mal:Nominative ;
 	.
 
-aama:ID3e0820ca-566a-4dd1-9440-989021ec4c45 a aamas:Term ;
+aama:IDe24dd703-4c3f-4700-9401-63cf1ad6723e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2619,7 +2610,7 @@ aama:ID3e0820ca-566a-4dd1-9440-989021ec4c45 a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:ID6f86cf7d-46c8-4b07-a413-ad5a6eef77f4 a aamas:Term ;
+aama:ID153e83f7-0e76-420d-ac75-53e823f73cda a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2632,7 +2623,7 @@ aama:ID6f86cf7d-46c8-4b07-a413-ad5a6eef77f4 a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:ID50be758a-1ad5-417d-80e7-15b9c9fbeb0a a aamas:Term ;
+aama:IDfd33cc88-0a51-4cdd-9e32-1e5eac8ce8e4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2645,7 +2636,7 @@ aama:ID50be758a-1ad5-417d-80e7-15b9c9fbeb0a a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:ID870c3f0c-4356-4054-9784-eb93f67ec8de a aamas:Term ;
+aama:ID10ae488a-c27b-4afc-ab0f-05807c396dd1 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2658,7 +2649,7 @@ aama:ID870c3f0c-4356-4054-9784-eb93f67ec8de a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:ID3c6b7ab3-b739-44a4-82c7-d44e3476317d a aamas:Term ;
+aama:IDc09adaf2-1bea-43c2-9978-55fdb07c8bf3 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2671,7 +2662,7 @@ aama:ID3c6b7ab3-b739-44a4-82c7-d44e3476317d a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:ID864b40c3-4798-4c00-981f-d4c3d515c677 a aamas:Term ;
+aama:IDd2060a9b-7f60-41d5-8586-cb04012b1822 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2684,7 +2675,7 @@ aama:ID864b40c3-4798-4c00-981f-d4c3d515c677 a aamas:Term ;
 	mal:case mal:Possessive ;
 	.
 
-aama:ID41f06e56-e147-4078-a07b-51e8230dee22 a aamas:Term ;
+aama:IDf9bdfd7c-1953-4702-82a2-3e05f8656edc a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
 	mal:pos mal:Pronoun ;
@@ -2705,7 +2696,7 @@ mal:maale-PRestrictive a aamas:Termcluster ;
 	rdfs:comment "Amha2001 #4.5. I alone%%you alone%%." 
 	.
 
-aama:ID494508c9-88bb-4afc-a4d1-c1a7c19f7c1b a aamas:Term ;
+aama:ID9657d943-72a8-44a7-9874-bc335a15d3be a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
 	mal:pos mal:Pronoun ;
@@ -2716,7 +2707,7 @@ aama:ID494508c9-88bb-4afc-a4d1-c1a7c19f7c1b a aamas:Term ;
 	mal:number mal:Singular ;
 	.
 
-aama:ID8139da6e-4dda-42f0-8891-387b64a9edda a aamas:Term ;
+aama:IDba1697b3-d6da-45fd-abe9-25b634ca05ea a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
 	mal:pos mal:Pronoun ;
@@ -2727,7 +2718,7 @@ aama:ID8139da6e-4dda-42f0-8891-387b64a9edda a aamas:Term ;
 	mal:number mal:Singular ;
 	.
 
-aama:IDe4efd650-9fcf-4369-8d8c-548a9038b757 a aamas:Term ;
+aama:IDa38aa9c8-e007-49c9-aa1e-11975d447ab5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
 	mal:pos mal:Pronoun ;
@@ -2738,7 +2729,7 @@ aama:IDe4efd650-9fcf-4369-8d8c-548a9038b757 a aamas:Term ;
 	mal:number mal:Plural ;
 	.
 
-aama:IDd15e4fae-ab19-4c98-84de-bfba4604f74c a aamas:Term ;
+aama:ID5e5fc0c5-6e2d-467b-9662-f87a9259b48d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
 	mal:pos mal:Pronoun ;
@@ -2749,7 +2740,7 @@ aama:IDd15e4fae-ab19-4c98-84de-bfba4604f74c a aamas:Term ;
 	mal:number mal:Plural ;
 	.
 
-aama:IDbddb2de6-bd46-4c2e-8b7c-e061644605c9 a aamas:Term ;
+aama:ID924d2f4a-80f6-4f4a-94a4-b00b7e3c7b92 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
 	mal:pos mal:Pronoun ;
@@ -2769,7 +2760,7 @@ mal:maale-VBE a aamas:Termcluster ;
             noted in paradigm. Template: AspSuff + beStem + Modal Context" 
 	.
 
-aama:ID5f0408f3-210a-459c-8221-03620b2e92c6 a aamas:Term ;
+aama:ID16027881-9b0c-4294-a268-407b2c8947b2 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
 	mal:vmorphClass mal:Finite ;
@@ -2782,7 +2773,7 @@ aama:ID5f0408f3-210a-459c-8221-03620b2e92c6 a aamas:Term ;
 	mal:polarity mal:Affirmative ;
 	.
 
-aama:IDb2c85782-47ca-45e5-8bf8-06b59730c321 a aamas:Term ;
+aama:ID4de31573-a892-49b7-8d05-755ad6ee1f32 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
 	mal:vmorphClass mal:Finite ;
@@ -2795,7 +2786,7 @@ aama:IDb2c85782-47ca-45e5-8bf8-06b59730c321 a aamas:Term ;
 	mal:polarity mal:Affirmative ;
 	.
 
-aama:ID33dcf841-19b7-4ab3-8673-1c90b9ad3342 a aamas:Term ;
+aama:ID0cde8237-13d2-47f2-91c6-96802a0dd577 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
 	mal:vmorphClass mal:Finite ;
@@ -2808,7 +2799,7 @@ aama:ID33dcf841-19b7-4ab3-8673-1c90b9ad3342 a aamas:Term ;
 	mal:polarity mal:Affirmative ;
 	.
 
-aama:IDb53b21d7-fe08-49e8-9931-7f4f3e94f245 a aamas:Term ;
+aama:IDde6f128c-b833-4287-b0a0-f198b737b6f4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
 	mal:vmorphClass mal:Finite ;
@@ -2821,7 +2812,7 @@ aama:IDb53b21d7-fe08-49e8-9931-7f4f3e94f245 a aamas:Term ;
 	mal:polarity mal:Affirmative ;
 	.
 
-aama:IDe4341cb8-ef53-433d-b263-50d497ee5ed0 a aamas:Term ;
+aama:ID0e354c09-b6b0-4355-aebb-0e8e36c25825 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
 	mal:vmorphClass mal:Finite ;
@@ -2834,7 +2825,7 @@ aama:IDe4341cb8-ef53-433d-b263-50d497ee5ed0 a aamas:Term ;
 	mal:polarity mal:Negative ;
 	.
 
-aama:ID4bdfaa99-64d1-47d5-bd6a-3a3135495a30 a aamas:Term ;
+aama:ID5e5476a7-d024-4f5b-abfe-29372568cf41 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
 	mal:vmorphClass mal:Finite ;
@@ -2856,7 +2847,7 @@ mal:maale-VDervStem a aamas:Termcluster ;
             and verb-stem alternations and lexico-semantic effects." 
 	.
 
-aama:ID8e5cb47c-2c66-4308-882f-c306469dbad4 a aamas:Term ;
+aama:ID8db97215-d334-42ee-9d2b-fc0826d1647a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
 	mal:vmorphClass mal:Finite ;
@@ -2866,7 +2857,7 @@ aama:ID8e5cb47c-2c66-4308-882f-c306469dbad4 a aamas:Term ;
 	mal:derivedStem mal:Causative ;
 	.
 
-aama:ID92b03c24-ea9d-44e6-958a-6f1488aea4f8 a aamas:Term ;
+aama:IDba486da0-5236-4281-8f22-7564f76978b4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
 	mal:vmorphClass mal:Finite ;
@@ -2876,7 +2867,7 @@ aama:ID92b03c24-ea9d-44e6-958a-6f1488aea4f8 a aamas:Term ;
 	mal:derivedStem mal:Causative2 ;
 	.
 
-aama:ID1382d255-d3a3-40f2-9c95-514eb770e0f3 a aamas:Term ;
+aama:IDf92cf695-ed69-4d6d-8b82-79168b3bafbf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
 	mal:vmorphClass mal:Finite ;
@@ -2886,7 +2877,7 @@ aama:ID1382d255-d3a3-40f2-9c95-514eb770e0f3 a aamas:Term ;
 	mal:derivedStem mal:Denominal ;
 	.
 
-aama:ID7e4516fa-3e66-44d6-b8c4-5933ac4ac913 a aamas:Term ;
+aama:IDb546028b-7ab6-42fe-93c5-bfff74433b90 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
 	mal:vmorphClass mal:Finite ;
@@ -2896,7 +2887,7 @@ aama:ID7e4516fa-3e66-44d6-b8c4-5933ac4ac913 a aamas:Term ;
 	mal:derivedStem mal:Inchoative ;
 	.
 
-aama:ID6ab7fcf8-01ac-43a1-aa28-6ff6d6817f82 a aamas:Term ;
+aama:ID4bdcf29d-fc94-463e-90c4-857a85a32d69 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
 	mal:vmorphClass mal:Finite ;
@@ -2906,7 +2897,7 @@ aama:ID6ab7fcf8-01ac-43a1-aa28-6ff6d6817f82 a aamas:Term ;
 	mal:derivedStem mal:Intensive ;
 	.
 
-aama:IDeff9cf52-fbae-4a4f-9020-27d99766e772 a aamas:Term ;
+aama:IDd2df9ce7-0db2-4a64-a4ab-b2ab11d52f60 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
 	mal:vmorphClass mal:Finite ;
@@ -2916,7 +2907,7 @@ aama:IDeff9cf52-fbae-4a4f-9020-27d99766e772 a aamas:Term ;
 	mal:derivedStem mal:Passive ;
 	.
 
-aama:ID43391e1f-df5e-42cd-b443-64ce6f4d2101 a aamas:Term ;
+aama:ID52107e40-a154-478c-b3fe-13bf9a4b0952 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
 	mal:vmorphClass mal:Finite ;
@@ -2926,7 +2917,7 @@ aama:ID43391e1f-df5e-42cd-b443-64ce6f4d2101 a aamas:Term ;
 	mal:derivedStem mal:PassiveCausative ;
 	.
 
-aama:IDd78ca45b-a43b-4f7e-950b-6965b24b8c95 a aamas:Term ;
+aama:ID4550b898-7a14-409e-aef1-3e539d62b69c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
 	mal:vmorphClass mal:Finite ;
@@ -2944,7 +2935,7 @@ mal:maale-VRootStructure a aamas:Termcluster ;
 	rdfs:comment "Amha2001 Table 5.1-2. Root structure:group1 – one-peak roots;group2 – two-peak roots" 
 	.
 
-aama:IDd692ce08-86b5-4a1e-b6dc-d508de5dff71 a aamas:Term ;
+aama:ID8d20d0d4-3d42-4231-9073-fbef93d6a984 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -2954,7 +2945,7 @@ aama:IDd692ce08-86b5-4a1e-b6dc-d508de5dff71 a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:IDce9314e5-d446-4130-aa19-72a9e1b0e81a a aamas:Term ;
+aama:ID5c9f4f95-2fed-4ccc-8d9c-5a70293b09c4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -2964,7 +2955,7 @@ aama:IDce9314e5-d446-4130-aa19-72a9e1b0e81a a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID97b8e14c-003b-47f0-84ec-a497719db4d5 a aamas:Term ;
+aama:ID4be68f32-198a-40c7-8137-14cfa1d4d958 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -2974,7 +2965,7 @@ aama:ID97b8e14c-003b-47f0-84ec-a497719db4d5 a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:IDc4f0ade0-d904-4067-85d7-db58c3cc8d62 a aamas:Term ;
+aama:ID95aa3879-3bd0-4cc0-9a63-796a101e2de7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -2984,7 +2975,7 @@ aama:IDc4f0ade0-d904-4067-85d7-db58c3cc8d62 a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID2e340307-8a8c-428a-a61f-c3db17357edc a aamas:Term ;
+aama:ID8c651a14-68f3-4783-8d1c-675a37e19131 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -2994,7 +2985,7 @@ aama:ID2e340307-8a8c-428a-a61f-c3db17357edc a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID08bbba62-8b4b-4ada-8399-4c8e53a6ee2a a aamas:Term ;
+aama:ID409ac607-fa92-4f6a-8635-dcb741fcc012 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3004,7 +2995,7 @@ aama:ID08bbba62-8b4b-4ada-8399-4c8e53a6ee2a a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID6e38e943-34dd-49d2-8148-9dc8c9da7acc a aamas:Term ;
+aama:IDe45dc921-b0c7-4bf6-9653-f4224cd098e3 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3014,7 +3005,7 @@ aama:ID6e38e943-34dd-49d2-8148-9dc8c9da7acc a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID74f23169-1c0b-4688-9b06-cd51f650745e a aamas:Term ;
+aama:ID8fbf0294-670d-4f69-b854-ec1bd11291d4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3024,7 +3015,7 @@ aama:ID74f23169-1c0b-4688-9b06-cd51f650745e a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID948ec5d2-0b9a-465d-8f8a-6638b2b32772 a aamas:Term ;
+aama:IDc364a554-3247-4602-95b5-ded87eda54f9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3034,7 +3025,7 @@ aama:ID948ec5d2-0b9a-465d-8f8a-6638b2b32772 a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID2a02cf55-e173-4652-800b-e7720dc18595 a aamas:Term ;
+aama:ID1969d8bd-a2d7-46f9-84cb-b305b152e40d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3044,7 +3035,7 @@ aama:ID2a02cf55-e173-4652-800b-e7720dc18595 a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID562953c7-eb70-4459-b73d-80604f7780e7 a aamas:Term ;
+aama:ID57a58064-4ec1-47de-b178-af7387968152 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3054,7 +3045,7 @@ aama:ID562953c7-eb70-4459-b73d-80604f7780e7 a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID1875f046-087f-496a-9914-732878c01dfb a aamas:Term ;
+aama:IDebcc763a-0a71-41eb-9e90-d589bd7f9b8e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3064,7 +3055,7 @@ aama:ID1875f046-087f-496a-9914-732878c01dfb a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID9b793f65-976c-4037-8e9c-6c8d19d02600 a aamas:Term ;
+aama:IDfa5d89c7-4373-4959-863b-fd231ed4016a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3074,7 +3065,7 @@ aama:ID9b793f65-976c-4037-8e9c-6c8d19d02600 a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID566463ac-58a0-4bc7-ab03-e91aed852a4a a aamas:Term ;
+aama:ID4e018df9-5126-4ede-8a15-d237012fa268 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3084,7 +3075,7 @@ aama:ID566463ac-58a0-4bc7-ab03-e91aed852a4a a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:IDde2cf835-3df3-46b5-9133-06ba7f37317b a aamas:Term ;
+aama:ID63b92dde-ff8d-489b-8acb-21d2725af933 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3094,7 +3085,7 @@ aama:IDde2cf835-3df3-46b5-9133-06ba7f37317b a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:IDb3a5b27d-0816-449e-a269-d8a10ac4bd6e a aamas:Term ;
+aama:ID7492fbc9-95a4-44d2-ac71-4b20c1e371d7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3104,7 +3095,7 @@ aama:IDb3a5b27d-0816-449e-a269-d8a10ac4bd6e a aamas:Term ;
 	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID41f57ff2-46c7-4f8a-9cbd-4e79c1b18718 a aamas:Term ;
+aama:ID8061f58d-f091-48b8-9259-2fe35db56d84 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3114,7 +3105,7 @@ aama:ID41f57ff2-46c7-4f8a-9cbd-4e79c1b18718 a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:IDf47ff323-365c-4810-af88-64c840074fe6 a aamas:Term ;
+aama:IDf4fd83a4-b5dd-4f7a-a7bf-38ca49bac41b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3124,7 +3115,7 @@ aama:IDf47ff323-365c-4810-af88-64c840074fe6 a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:ID90ad37bc-cd56-42b5-929e-60f9da335710 a aamas:Term ;
+aama:ID99a2e1a1-2259-4de1-a849-d14d0227a309 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3134,7 +3125,7 @@ aama:ID90ad37bc-cd56-42b5-929e-60f9da335710 a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:IDb1ec6476-7351-41a4-b8b7-c0a493630b33 a aamas:Term ;
+aama:ID2247c9d0-ddcc-404c-89f2-782bf5465cb9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3144,7 +3135,7 @@ aama:IDb1ec6476-7351-41a4-b8b7-c0a493630b33 a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:ID86c99551-ebc7-4e50-9699-7d316581cca6 a aamas:Term ;
+aama:IDa627febe-8571-48a6-9ba6-65f8df4918a5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3154,7 +3145,7 @@ aama:ID86c99551-ebc7-4e50-9699-7d316581cca6 a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:ID5516eb71-67d2-4116-b615-28c378dc57b3 a aamas:Term ;
+aama:ID131ee0b9-c019-46a5-bcc2-49e4c365898d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3164,7 +3155,7 @@ aama:ID5516eb71-67d2-4116-b615-28c378dc57b3 a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:IDebd29566-df5c-4802-a42d-5948527b4d1d a aamas:Term ;
+aama:ID4e7e9e9e-7663-40a4-9c58-d18f2b1701ba a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3174,7 +3165,7 @@ aama:IDebd29566-df5c-4802-a42d-5948527b4d1d a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:IDa284d2ba-49e2-4851-a140-16a2eccf7bad a aamas:Term ;
+aama:ID7d7ba197-1c9d-4e14-9c98-0653aba2e5d5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3184,7 +3175,7 @@ aama:IDa284d2ba-49e2-4851-a140-16a2eccf7bad a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:ID0897c2c8-cd67-4eb2-b9b9-4a19085ee473 a aamas:Term ;
+aama:IDe3f7682b-5ae1-479e-a9a2-7b010082137d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
@@ -3194,7 +3185,7 @@ aama:ID0897c2c8-cd67-4eb2-b9b9-4a19085ee473 a aamas:Term ;
 	mal:rootStructure mal:Group2 ;
 	.
 
-aama:ID577c6763-aae2-4c7d-ab80-7de2ebb5037c a aamas:Term ;
+aama:IDdffaf3a9-d234-49f2-b419-f667f277e7e0 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;

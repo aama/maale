@@ -5,8 +5,7 @@
  :datasource "Amha2001"
  :geodemoURL "http://www.ethnologue.com/language/mdy"
  :geodemoTXT "Varieties and subdialects of the Omotic language Maale are spoken in Ethiopia, 'Southern Nations, Nationalities, and Peoples’ region: North Omo zone, southeast of Jinka'; approx. 94,700 speakers."
- :schemata {:lexeme [:mu ],
- :case [:Ablative :Absolutive :CaseC :Dative :Instrumental :Nominative :Possessive],
+ :schemata { :case [:Ablative :Absolutive :CaseC :Dative :Instrumental :Nominative :Possessive],
  :clauseType [:Causal :ClauseC :Conditional :Converb1 :Converb2 :Converb3 :Declarative :Imperative :InterrDubitative :InterrNonPolar :InterrPolar :Optative :Preventive :Purposive1 :Purposive2 :Simultaneous :Temporal1 :Temporal2],
  :derivedStem [:Causative :Causative2 :Denominal :Inchoative :Intensive :Passive :PassiveCausative :Reflexive],
  :gender [:Common :Fem :Masc],
@@ -27,8 +26,10 @@
           :synsemClass [:case :clauseType :derivedStem :modal :polarity :pos possType :proClass :tam :temporal],
           :inflClass [:rootStructure],
           :otherClass []}
- :lexemes{:mu {:lemma "múʔ", :gloss "eat"},
-          :ba {:lemma "bá-", :gloss "not exist"}}
+ :lexemes {
+:ba   {:pos :Verb, :lemma "bá-", :gloss "not exist", },
+:mu   {:pos :Verb, :lemma "múʔ", :gloss "eat", },
+}
  :termclusters [
                 {:label "maale-VInflectionTemplate"
                  :note "Amha2001 Ch. 7 (summary p. 158);Ch. 8 (summary p. 202). Maale verb morphology does not include subject agreement,with partial exception of imperative-optative. Inflectional template is:[VRoot (+ dervSuff)](+ AspectMarker) + moodClauseMarker. Attested combinations of aspect and clause suffixes given in paradigm. Template: AspSuff + ClauseSuff + Note."
