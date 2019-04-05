@@ -2,37 +2,37 @@
  :lang :maale
  :subfamily "Northern Omotic Ometo South"
  :sgpref "mal"
- :datasource "Amha2001"
+ :datasource "Amha2001; abbrev. A01"
  :geodemoURL "http://www.ethnologue.com/language/mdy"
  :geodemoTXT "Varieties and subdialects of the Omotic language Maale are spoken in Ethiopia, 'Southern Nations, Nationalities, and Peoples’ region: North Omo zone, southeast of Jinka'; approx. 94,700 speakers."
  :schemata { :case [:Ablative :Absolutive :CaseC :Dative :Instrumental :Nominative :Possessive],
- :clauseType [:Causal :ClauseC :Conditional :Converb1 :Converb2 :Converb3 :Declarative :Imperative :InterrDubitative :InterrNonPolar :InterrPolar :Optative :Preventive :Purposive1 :Purposive2 :Simultaneous :Temporal1 :Temporal2],
- :derivedStem [:Causative :Causative2 :Denominal :Inchoative :Intensive :Passive :PassiveCausative :Reflexive],
- :gender [:Common :Fem :Masc],
- :modal [:Mirative :ModC :NewInfo :NonVerbal :Perfective :Veridical],
- :number [:NumC :Plural :Singular],
- :pdgmSubClass [:BE],
- :person [:PersC :Person1 :Person2 :Person3 :Person3Ref :To_be_added],
- :polarity [:Affirmative :Negative],
- :pos [:Pronoun :Verb],
- :possType [:Poss1 :Poss2 :PossNom1 :PossNom2],
- :proClass [:BasicPro :CaseMarking :Pro2ary :ProInd :ProPoss :Restrictive],
- :rootStructure [:Group1 :Group2],
- :tam [:Imperfective :ImperfectiveFuture :ImperfectivePresent :InterrPerm :Perfective :TamC :To_be_added],
- :temporal [:Clauses],
- :vmorphClass [:CopulaBE :DervStem :FiniteToBeAdded :InflectionTemplate :RootStructure]
- }
+            :clauseType [:Causal :ClauseC :Conditional :Converb1 :Converb2 :Converb3 :Declarative :Imperative :InterrDubitative :InterrNonPolar :InterrPolar :Optative :Preventive :Purposive1 :Purposive2 :Simultaneous :Temporal1 :Temporal2],
+            :derivedStem [:Causative :Causative2 :Denominal :Inchoative :Intensive :Passive :PassiveCausative :Reflexive],
+            :gender [:Common :Fem :Masc],
+            :modal [:Mirative :ModC :NewInfo :NonVerbal :Perfective :Veridical],
+            :number [:NumC :Plural :Singular],
+            :pdgmSubClass [:BE],
+            :person [:PersC :Person1 :Person2 :Person3 :Person3Ref :To_be_added],
+            :polarity [:Affirmative :Negative],
+            :pos [:Pronoun :Verb],
+            :possType [:Poss1 :Poss2 :PossNom1 :PossNom2],
+            :proClass [:BasicPro :CaseMarking :Pro2ary :ProInd :ProPoss :Restrictive],
+            :rootStructure [:Group1 :Group2],
+            :tam [:Imperfective :ImperfectiveFuture :ImperfectivePresent :InterrPerm :Perfective :TamC :To_be_added],
+            :temporal [:Clauses],
+            :vmorphClass [:CopulaBE :DervStem :FiniteToBeAdded :InflectionTemplate :RootStructure]
+            }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :clauseType :derivedStem :modal :polarity :pos possType :proClass :tam :temporal],
           :inflClass [:rootStructure],
           :otherClass []}
  :lexemes {
-:ba   {:pos :Verb, :lemma "bá-", :gloss "not exist", },
-:mu   {:pos :Verb, :lemma "múʔ", :gloss "eat", },
-}
+           :ba   {:pos :Verb, :lemma "bá-", :gloss "not exist", },
+           :mu   {:pos :Verb, :lemma "múʔ", :gloss "eat", },
+           }
  :termclusters [
                 {:label "maale-VInflectionTemplate"
-                 :note "Amha2001 Ch. 7 (summary p. 158);Ch. 8 (summary p. 202). Maale verb morphology does not include subject agreement,with partial exception of imperative-optative. Inflectional template is:[VRoot (+ dervSuff)](+ AspectMarker) + moodClauseMarker. Attested combinations of aspect and clause suffixes given in paradigm. Template: AspSuff + ClauseSuff + Note."
+                 :note "A01Ch.7&8 :: (summaries p. 158 & p. 202). Maale verb morphology does not include subject agreement,with partial exception of imperative-optative. Inflectional template is:[VRoot (+ dervSuff)](+ AspectMarker) + moodClauseMarker. Attested combinations of aspect and clause suffixes given in paradigm. Template: AspSuff + ClauseSuff + Note."
                  :common {:vmorphClass :Finite,
                           :pos :Verb,
                           :gender :Common,
@@ -83,7 +83,7 @@
                          [:Temporal2 :ModC :Affirmative :TamC :NumC :PersC "Common . . .  -áána ['as soon as']" "Common + -áána  + as soon as"]]
                  }
                 {:label "maale-P2ary"
-                 :note "Amha2001 #4.2."
+                 :note "A01#4.2."
                  :common {             :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Pro2ary}
                  :terms [[:case :number :person :gender :token],
@@ -101,7 +101,7 @@
                          [:Possessive :Plural :Person3 :Common "í-yát-ó"]]
                  }
                 {:label "maale-PBasicPro"
-                 :note "Amha2001 #4.1"
+                 :note "A01#4.1"
                  :common {             :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :BasicPro}
                  :terms [[:case :number :person :gender :token],
@@ -116,7 +116,7 @@
                          [:Possessive :Plural :Person1 :Common "nu"]]
                  }
                 {:label "maale-PCaseMarking"
-                 :note "Amha2001 #4.6"
+                 :note "A01#4.6"
                  :common {             :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :CaseMarking}
                  :terms [[:case :number :person :gender :token],
@@ -157,9 +157,7 @@
                          [:Nominative :Plural :Person3 :Common "ʔiyáta"]]
                  }
                 {:label "maale-PPoss"
-                 :note "Amha2001 Table 4.2. PossType:poss1 – basic;poss2 – when possessed noun is
-            modified;possNom1 – possessive noun involving known possession;possNom2 – possessive
-            noun involving unknown possession"
+                 :note "A01Table 4.2 :: PossType:poss1 – basic;poss2 – when possessed noun is odified;possNom1 – possessive noun involving known possession;possNom2 – possessive noun involving unknown possession"
                  :common {:case :Possessive,
                           :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :ProPoss}
@@ -194,10 +192,7 @@
                          [:PossNom2 :Plural :Person3 :Common "ʔiyátó-ssi"]]
                  }
                 {:label "maale-PProInd"
-                 :note "Amha2001 Table 4.1. 3Ref,called logophoric third person – 3LOGby Amha2001,is
-            unmarked for case,num,and gen. This pronoun occurs only when there is a co-referential
-            third person subject in the same sentence. It cannot e used co-referentially across
-            sentences(p. 87)."
+                 :note "A01Table 4. ::  3Ref,called logophoric third person – 3LOGby Amha2001,is unmarked for case,num,and gen. This pronoun occurs only when there is a co-referential third person subject in the same sentence. It cannot e used co-referentially across sentences(p. 87)."
                  :common {             :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :ProInd}
                  :terms [[:case :number :person :gender :token],
@@ -225,7 +220,7 @@
                          [:Possessive :Plural :Person3 :Common "ʔiyátó"]]
                  }
                 {:label "maale-PRestrictive"
-                 :note "Amha2001 #4.5. I alone,you alone,."
+                 :note "A01#4.5 :: I alone,you alone,."
                  :common {             :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Restrictive}
                  :terms [[:number :person :token],
@@ -236,8 +231,7 @@
                          [:NumC :Person3 "peesi"]]
                  }
                 {:label "maale-VBE"
-                 :note "Amha2001 #5.3.1.3 The various verbs BE/EXIST only occur with aspect suffixes
-            noted in paradigm. Template: AspSuff + beStem + Modal Context"
+                 :note "A01#5.3.1.3 :: The various verbs BE/EXIST only occur with aspect suffixes noted in paradigm. Template: AspSuff + beStem + Modal Context"
                  :common {:vmorphClass :Finite,
                           :pos :Verb,
                           :temporal :Clauses,
@@ -251,8 +245,7 @@
                          [:Negative :TamC "ba- . . .  Common : without aspect:bá-se does not exist" "Common + ba- + without aspect:bá-se does not exist"]]
                  }
                 {:label "maale-VDervStem"
-                 :note "Amha2001 #5.2. Author gives many phonological and semantic details about affix
-            and verb-stem alternations and lexico-semantic effects."
+                 :note "A01#5.2 :: Author gives many phonological and semantic details about affix and verb-stem alternations and lexico-semantic effects."
                  :common {:vmorphClass :Finite,
                           :pos :Verb,
                           :verbMorphClass :DervStem}
@@ -267,7 +260,7 @@
                          [:Reflexive "-t-"]]
                  }
                 {:label "maale-VRootStructure"
-                 :note "Amha2001 Table 5.1-2. Root structure:group1 – one-peak roots;group2 – two-peak roots"
+                 :note "A01Table 5.1-2 :: Root structure:group1 – one-peak roots;group2 – two-peak roots"
                  :common {             :pos :Verb,
                           :vmorphClass :RootStructure}
                  :terms [[:rootStructure :token :token-note-structure],
