@@ -1,25 +1,24 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data/maale/maale-pdgms.edn
+#data/maale-pdgms.json
 
-@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc:    <http://purl.org/dc/elements>.
-@prefix dcterms:    <http://purl.org/dc/terms>.
-@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements> .
+@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix aama:    <http://id.oi.uchicago.edu/aama/2013/> .
 @prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
-@prefix mal:   <http://id.oi.uchicago.edu/aama/2013/maale/> .
+@prefix mal:     <http://id.oi.uchicago.edu/aama/2013/maale/> .
 
 #LANG INFO:
 
-aama:Maale a aamas:Language .
+aama:Maale a aamas:Language.
 aama:Maale rdfs:label "Maale" .
 aama:Maale aamas:subfamily "Northern Omotic Ometo South" .
 aama:Maale aamas:lpref "mal" .
 aama:Maale aamas:dataSource "Amha2001; abbrev. A01" .
-aama:Maale aamas:dataSourceNotes "" .
 aama:Maale aamas:geodemoURL "http://www.ethnologue.com/language/mdy" .
-aama:Maale aamas:geodemoTXT "Varieties and subdialects of the Omotic language Maale are spoken in Ethiopia%% 'Southern Nations%% Nationalities%% and Peoples’ region: North Omo zone%% southeast of Jinka'; approx. 94%%700 speakers." .
-
+aama:Maale aamas:geodemoTxt "Varieties and subdialects of the Omotic language Maale are spoken in Ethiopia, ZZSouthern Nations, Nationalities, and Peoples’ region: North Omo zone, southeast of JinkaZZ; approx. 94,700 speakers." .
 
 #SCHEMATA: person
 mal:person aamas:lang aama:Maale .
@@ -31,22 +30,22 @@ mal:person rdfs:range mal:Person .
 mal:Person rdfs:subClassOf mal:MuExponent .
 mal:person rdfs:subPropertyOf mal:muProperty .
 mal:PersC aamas:lang aama:Maale .
-mal:PersC rdf:type mal:Person .
+mal:PersC rdf:type aamas:Person .
 mal:PersC rdfs:label "PersC" .
 mal:Person1 aamas:lang aama:Maale .
-mal:Person1 rdf:type mal:Person .
+mal:Person1 rdf:type aamas:Person .
 mal:Person1 rdfs:label "Person1" .
 mal:Person2 aamas:lang aama:Maale .
-mal:Person2 rdf:type mal:Person .
+mal:Person2 rdf:type aamas:Person .
 mal:Person2 rdfs:label "Person2" .
 mal:Person3 aamas:lang aama:Maale .
-mal:Person3 rdf:type mal:Person .
+mal:Person3 rdf:type aamas:Person .
 mal:Person3 rdfs:label "Person3" .
 mal:Person3Ref aamas:lang aama:Maale .
-mal:Person3Ref rdf:type mal:Person .
+mal:Person3Ref rdf:type aamas:Person .
 mal:Person3Ref rdfs:label "Person3Ref" .
 mal:To_be_added aamas:lang aama:Maale .
-mal:To_be_added rdf:type mal:Person .
+mal:To_be_added rdf:type aamas:Person .
 mal:To_be_added rdfs:label "To_be_added" .
 
 #SCHEMATA: derivedStem
@@ -59,28 +58,28 @@ mal:derivedStem rdfs:range mal:Derivedstem .
 mal:Derivedstem rdfs:subClassOf mal:MuExponent .
 mal:derivedStem rdfs:subPropertyOf mal:muProperty .
 mal:Causative aamas:lang aama:Maale .
-mal:Causative rdf:type mal:Derivedstem .
+mal:Causative rdf:type aamas:Derivedstem .
 mal:Causative rdfs:label "Causative" .
 mal:Causative2 aamas:lang aama:Maale .
-mal:Causative2 rdf:type mal:Derivedstem .
+mal:Causative2 rdf:type aamas:Derivedstem .
 mal:Causative2 rdfs:label "Causative2" .
 mal:Denominal aamas:lang aama:Maale .
-mal:Denominal rdf:type mal:Derivedstem .
+mal:Denominal rdf:type aamas:Derivedstem .
 mal:Denominal rdfs:label "Denominal" .
 mal:Inchoative aamas:lang aama:Maale .
-mal:Inchoative rdf:type mal:Derivedstem .
+mal:Inchoative rdf:type aamas:Derivedstem .
 mal:Inchoative rdfs:label "Inchoative" .
 mal:Intensive aamas:lang aama:Maale .
-mal:Intensive rdf:type mal:Derivedstem .
+mal:Intensive rdf:type aamas:Derivedstem .
 mal:Intensive rdfs:label "Intensive" .
 mal:Passive aamas:lang aama:Maale .
-mal:Passive rdf:type mal:Derivedstem .
+mal:Passive rdf:type aamas:Derivedstem .
 mal:Passive rdfs:label "Passive" .
 mal:PassiveCausative aamas:lang aama:Maale .
-mal:PassiveCausative rdf:type mal:Derivedstem .
+mal:PassiveCausative rdf:type aamas:Derivedstem .
 mal:PassiveCausative rdfs:label "PassiveCausative" .
 mal:Reflexive aamas:lang aama:Maale .
-mal:Reflexive rdf:type mal:Derivedstem .
+mal:Reflexive rdf:type aamas:Derivedstem .
 mal:Reflexive rdfs:label "Reflexive" .
 
 #SCHEMATA: clauseType
@@ -93,58 +92,58 @@ mal:clauseType rdfs:range mal:Clausetype .
 mal:Clausetype rdfs:subClassOf mal:MuExponent .
 mal:clauseType rdfs:subPropertyOf mal:muProperty .
 mal:Causal aamas:lang aama:Maale .
-mal:Causal rdf:type mal:Clausetype .
+mal:Causal rdf:type aamas:Clausetype .
 mal:Causal rdfs:label "Causal" .
 mal:ClauseC aamas:lang aama:Maale .
-mal:ClauseC rdf:type mal:Clausetype .
+mal:ClauseC rdf:type aamas:Clausetype .
 mal:ClauseC rdfs:label "ClauseC" .
 mal:Conditional aamas:lang aama:Maale .
-mal:Conditional rdf:type mal:Clausetype .
+mal:Conditional rdf:type aamas:Clausetype .
 mal:Conditional rdfs:label "Conditional" .
 mal:Converb1 aamas:lang aama:Maale .
-mal:Converb1 rdf:type mal:Clausetype .
+mal:Converb1 rdf:type aamas:Clausetype .
 mal:Converb1 rdfs:label "Converb1" .
 mal:Converb2 aamas:lang aama:Maale .
-mal:Converb2 rdf:type mal:Clausetype .
+mal:Converb2 rdf:type aamas:Clausetype .
 mal:Converb2 rdfs:label "Converb2" .
 mal:Converb3 aamas:lang aama:Maale .
-mal:Converb3 rdf:type mal:Clausetype .
+mal:Converb3 rdf:type aamas:Clausetype .
 mal:Converb3 rdfs:label "Converb3" .
 mal:Declarative aamas:lang aama:Maale .
-mal:Declarative rdf:type mal:Clausetype .
+mal:Declarative rdf:type aamas:Clausetype .
 mal:Declarative rdfs:label "Declarative" .
 mal:Imperative aamas:lang aama:Maale .
-mal:Imperative rdf:type mal:Clausetype .
+mal:Imperative rdf:type aamas:Clausetype .
 mal:Imperative rdfs:label "Imperative" .
 mal:InterrDubitative aamas:lang aama:Maale .
-mal:InterrDubitative rdf:type mal:Clausetype .
+mal:InterrDubitative rdf:type aamas:Clausetype .
 mal:InterrDubitative rdfs:label "InterrDubitative" .
 mal:InterrNonPolar aamas:lang aama:Maale .
-mal:InterrNonPolar rdf:type mal:Clausetype .
+mal:InterrNonPolar rdf:type aamas:Clausetype .
 mal:InterrNonPolar rdfs:label "InterrNonPolar" .
 mal:InterrPolar aamas:lang aama:Maale .
-mal:InterrPolar rdf:type mal:Clausetype .
+mal:InterrPolar rdf:type aamas:Clausetype .
 mal:InterrPolar rdfs:label "InterrPolar" .
 mal:Optative aamas:lang aama:Maale .
-mal:Optative rdf:type mal:Clausetype .
+mal:Optative rdf:type aamas:Clausetype .
 mal:Optative rdfs:label "Optative" .
 mal:Preventive aamas:lang aama:Maale .
-mal:Preventive rdf:type mal:Clausetype .
+mal:Preventive rdf:type aamas:Clausetype .
 mal:Preventive rdfs:label "Preventive" .
 mal:Purposive1 aamas:lang aama:Maale .
-mal:Purposive1 rdf:type mal:Clausetype .
+mal:Purposive1 rdf:type aamas:Clausetype .
 mal:Purposive1 rdfs:label "Purposive1" .
 mal:Purposive2 aamas:lang aama:Maale .
-mal:Purposive2 rdf:type mal:Clausetype .
+mal:Purposive2 rdf:type aamas:Clausetype .
 mal:Purposive2 rdfs:label "Purposive2" .
 mal:Simultaneous aamas:lang aama:Maale .
-mal:Simultaneous rdf:type mal:Clausetype .
+mal:Simultaneous rdf:type aamas:Clausetype .
 mal:Simultaneous rdfs:label "Simultaneous" .
 mal:Temporal1 aamas:lang aama:Maale .
-mal:Temporal1 rdf:type mal:Clausetype .
+mal:Temporal1 rdf:type aamas:Clausetype .
 mal:Temporal1 rdfs:label "Temporal1" .
 mal:Temporal2 aamas:lang aama:Maale .
-mal:Temporal2 rdf:type mal:Clausetype .
+mal:Temporal2 rdf:type aamas:Clausetype .
 mal:Temporal2 rdfs:label "Temporal2" .
 
 #SCHEMATA: number
@@ -157,13 +156,13 @@ mal:number rdfs:range mal:Number .
 mal:Number rdfs:subClassOf mal:MuExponent .
 mal:number rdfs:subPropertyOf mal:muProperty .
 mal:NumC aamas:lang aama:Maale .
-mal:NumC rdf:type mal:Number .
+mal:NumC rdf:type aamas:Number .
 mal:NumC rdfs:label "NumC" .
 mal:Plural aamas:lang aama:Maale .
-mal:Plural rdf:type mal:Number .
+mal:Plural rdf:type aamas:Number .
 mal:Plural rdfs:label "Plural" .
 mal:Singular aamas:lang aama:Maale .
-mal:Singular rdf:type mal:Number .
+mal:Singular rdf:type aamas:Number .
 mal:Singular rdfs:label "Singular" .
 
 #SCHEMATA: vmorphClass
@@ -176,19 +175,19 @@ mal:vmorphClass rdfs:range mal:Vmorphclass .
 mal:Vmorphclass rdfs:subClassOf mal:MuExponent .
 mal:vmorphClass rdfs:subPropertyOf mal:muProperty .
 mal:CopulaBE aamas:lang aama:Maale .
-mal:CopulaBE rdf:type mal:Vmorphclass .
+mal:CopulaBE rdf:type aamas:Vmorphclass .
 mal:CopulaBE rdfs:label "CopulaBE" .
 mal:DervStem aamas:lang aama:Maale .
-mal:DervStem rdf:type mal:Vmorphclass .
+mal:DervStem rdf:type aamas:Vmorphclass .
 mal:DervStem rdfs:label "DervStem" .
 mal:FiniteToBeAdded aamas:lang aama:Maale .
-mal:FiniteToBeAdded rdf:type mal:Vmorphclass .
+mal:FiniteToBeAdded rdf:type aamas:Vmorphclass .
 mal:FiniteToBeAdded rdfs:label "FiniteToBeAdded" .
 mal:InflectionTemplate aamas:lang aama:Maale .
-mal:InflectionTemplate rdf:type mal:Vmorphclass .
+mal:InflectionTemplate rdf:type aamas:Vmorphclass .
 mal:InflectionTemplate rdfs:label "InflectionTemplate" .
 mal:RootStructure aamas:lang aama:Maale .
-mal:RootStructure rdf:type mal:Vmorphclass .
+mal:RootStructure rdf:type aamas:Vmorphclass .
 mal:RootStructure rdfs:label "RootStructure" .
 
 #SCHEMATA: possType
@@ -201,16 +200,16 @@ mal:possType rdfs:range mal:Posstype .
 mal:Posstype rdfs:subClassOf mal:MuExponent .
 mal:possType rdfs:subPropertyOf mal:muProperty .
 mal:Poss1 aamas:lang aama:Maale .
-mal:Poss1 rdf:type mal:Posstype .
+mal:Poss1 rdf:type aamas:Posstype .
 mal:Poss1 rdfs:label "Poss1" .
 mal:Poss2 aamas:lang aama:Maale .
-mal:Poss2 rdf:type mal:Posstype .
+mal:Poss2 rdf:type aamas:Posstype .
 mal:Poss2 rdfs:label "Poss2" .
 mal:PossNom1 aamas:lang aama:Maale .
-mal:PossNom1 rdf:type mal:Posstype .
+mal:PossNom1 rdf:type aamas:Posstype .
 mal:PossNom1 rdfs:label "PossNom1" .
 mal:PossNom2 aamas:lang aama:Maale .
-mal:PossNom2 rdf:type mal:Posstype .
+mal:PossNom2 rdf:type aamas:Posstype .
 mal:PossNom2 rdfs:label "PossNom2" .
 
 #SCHEMATA: pos
@@ -223,10 +222,10 @@ mal:pos rdfs:range mal:Pos .
 mal:Pos rdfs:subClassOf mal:MuExponent .
 mal:pos rdfs:subPropertyOf mal:muProperty .
 mal:Pronoun aamas:lang aama:Maale .
-mal:Pronoun rdf:type mal:Pos .
+mal:Pronoun rdf:type aamas:Pos .
 mal:Pronoun rdfs:label "Pronoun" .
 mal:Verb aamas:lang aama:Maale .
-mal:Verb rdf:type mal:Pos .
+mal:Verb rdf:type aamas:Pos .
 mal:Verb rdfs:label "Verb" .
 
 #SCHEMATA: pdgmSubClass
@@ -239,7 +238,7 @@ mal:pdgmSubClass rdfs:range mal:Pdgmsubclass .
 mal:Pdgmsubclass rdfs:subClassOf mal:MuExponent .
 mal:pdgmSubClass rdfs:subPropertyOf mal:muProperty .
 mal:BE aamas:lang aama:Maale .
-mal:BE rdf:type mal:Pdgmsubclass .
+mal:BE rdf:type aamas:Pdgmsubclass .
 mal:BE rdfs:label "BE" .
 
 #SCHEMATA: modal
@@ -252,22 +251,22 @@ mal:modal rdfs:range mal:Modal .
 mal:Modal rdfs:subClassOf mal:MuExponent .
 mal:modal rdfs:subPropertyOf mal:muProperty .
 mal:Mirative aamas:lang aama:Maale .
-mal:Mirative rdf:type mal:Modal .
+mal:Mirative rdf:type aamas:Modal .
 mal:Mirative rdfs:label "Mirative" .
 mal:ModC aamas:lang aama:Maale .
-mal:ModC rdf:type mal:Modal .
+mal:ModC rdf:type aamas:Modal .
 mal:ModC rdfs:label "ModC" .
 mal:NewInfo aamas:lang aama:Maale .
-mal:NewInfo rdf:type mal:Modal .
+mal:NewInfo rdf:type aamas:Modal .
 mal:NewInfo rdfs:label "NewInfo" .
 mal:NonVerbal aamas:lang aama:Maale .
-mal:NonVerbal rdf:type mal:Modal .
+mal:NonVerbal rdf:type aamas:Modal .
 mal:NonVerbal rdfs:label "NonVerbal" .
 mal:Perfective aamas:lang aama:Maale .
-mal:Perfective rdf:type mal:Modal .
+mal:Perfective rdf:type aamas:Modal .
 mal:Perfective rdfs:label "Perfective" .
 mal:Veridical aamas:lang aama:Maale .
-mal:Veridical rdf:type mal:Modal .
+mal:Veridical rdf:type aamas:Modal .
 mal:Veridical rdfs:label "Veridical" .
 
 #SCHEMATA: proClass
@@ -280,22 +279,22 @@ mal:proClass rdfs:range mal:Proclass .
 mal:Proclass rdfs:subClassOf mal:MuExponent .
 mal:proClass rdfs:subPropertyOf mal:muProperty .
 mal:BasicPro aamas:lang aama:Maale .
-mal:BasicPro rdf:type mal:Proclass .
+mal:BasicPro rdf:type aamas:Proclass .
 mal:BasicPro rdfs:label "BasicPro" .
 mal:CaseMarking aamas:lang aama:Maale .
-mal:CaseMarking rdf:type mal:Proclass .
+mal:CaseMarking rdf:type aamas:Proclass .
 mal:CaseMarking rdfs:label "CaseMarking" .
 mal:Pro2ary aamas:lang aama:Maale .
-mal:Pro2ary rdf:type mal:Proclass .
+mal:Pro2ary rdf:type aamas:Proclass .
 mal:Pro2ary rdfs:label "Pro2ary" .
 mal:ProInd aamas:lang aama:Maale .
-mal:ProInd rdf:type mal:Proclass .
+mal:ProInd rdf:type aamas:Proclass .
 mal:ProInd rdfs:label "ProInd" .
 mal:ProPoss aamas:lang aama:Maale .
-mal:ProPoss rdf:type mal:Proclass .
+mal:ProPoss rdf:type aamas:Proclass .
 mal:ProPoss rdfs:label "ProPoss" .
 mal:Restrictive aamas:lang aama:Maale .
-mal:Restrictive rdf:type mal:Proclass .
+mal:Restrictive rdf:type aamas:Proclass .
 mal:Restrictive rdfs:label "Restrictive" .
 
 #SCHEMATA: case
@@ -308,25 +307,25 @@ mal:case rdfs:range mal:Case .
 mal:Case rdfs:subClassOf mal:MuExponent .
 mal:case rdfs:subPropertyOf mal:muProperty .
 mal:Ablative aamas:lang aama:Maale .
-mal:Ablative rdf:type mal:Case .
+mal:Ablative rdf:type aamas:Case .
 mal:Ablative rdfs:label "Ablative" .
 mal:Absolutive aamas:lang aama:Maale .
-mal:Absolutive rdf:type mal:Case .
+mal:Absolutive rdf:type aamas:Case .
 mal:Absolutive rdfs:label "Absolutive" .
 mal:CaseC aamas:lang aama:Maale .
-mal:CaseC rdf:type mal:Case .
+mal:CaseC rdf:type aamas:Case .
 mal:CaseC rdfs:label "CaseC" .
 mal:Dative aamas:lang aama:Maale .
-mal:Dative rdf:type mal:Case .
+mal:Dative rdf:type aamas:Case .
 mal:Dative rdfs:label "Dative" .
 mal:Instrumental aamas:lang aama:Maale .
-mal:Instrumental rdf:type mal:Case .
+mal:Instrumental rdf:type aamas:Case .
 mal:Instrumental rdfs:label "Instrumental" .
 mal:Nominative aamas:lang aama:Maale .
-mal:Nominative rdf:type mal:Case .
+mal:Nominative rdf:type aamas:Case .
 mal:Nominative rdfs:label "Nominative" .
 mal:Possessive aamas:lang aama:Maale .
-mal:Possessive rdf:type mal:Case .
+mal:Possessive rdf:type aamas:Case .
 mal:Possessive rdfs:label "Possessive" .
 
 #SCHEMATA: polarity
@@ -339,10 +338,10 @@ mal:polarity rdfs:range mal:Polarity .
 mal:Polarity rdfs:subClassOf mal:MuExponent .
 mal:polarity rdfs:subPropertyOf mal:muProperty .
 mal:Affirmative aamas:lang aama:Maale .
-mal:Affirmative rdf:type mal:Polarity .
+mal:Affirmative rdf:type aamas:Polarity .
 mal:Affirmative rdfs:label "Affirmative" .
 mal:Negative aamas:lang aama:Maale .
-mal:Negative rdf:type mal:Polarity .
+mal:Negative rdf:type aamas:Polarity .
 mal:Negative rdfs:label "Negative" .
 
 #SCHEMATA: tam
@@ -355,25 +354,25 @@ mal:tam rdfs:range mal:Tam .
 mal:Tam rdfs:subClassOf mal:MuExponent .
 mal:tam rdfs:subPropertyOf mal:muProperty .
 mal:Imperfective aamas:lang aama:Maale .
-mal:Imperfective rdf:type mal:Tam .
+mal:Imperfective rdf:type aamas:Tam .
 mal:Imperfective rdfs:label "Imperfective" .
 mal:ImperfectiveFuture aamas:lang aama:Maale .
-mal:ImperfectiveFuture rdf:type mal:Tam .
+mal:ImperfectiveFuture rdf:type aamas:Tam .
 mal:ImperfectiveFuture rdfs:label "ImperfectiveFuture" .
 mal:ImperfectivePresent aamas:lang aama:Maale .
-mal:ImperfectivePresent rdf:type mal:Tam .
+mal:ImperfectivePresent rdf:type aamas:Tam .
 mal:ImperfectivePresent rdfs:label "ImperfectivePresent" .
 mal:InterrPerm aamas:lang aama:Maale .
-mal:InterrPerm rdf:type mal:Tam .
+mal:InterrPerm rdf:type aamas:Tam .
 mal:InterrPerm rdfs:label "InterrPerm" .
 mal:Perfective aamas:lang aama:Maale .
-mal:Perfective rdf:type mal:Tam .
+mal:Perfective rdf:type aamas:Tam .
 mal:Perfective rdfs:label "Perfective" .
 mal:TamC aamas:lang aama:Maale .
-mal:TamC rdf:type mal:Tam .
+mal:TamC rdf:type aamas:Tam .
 mal:TamC rdfs:label "TamC" .
 mal:To_be_added aamas:lang aama:Maale .
-mal:To_be_added rdf:type mal:Tam .
+mal:To_be_added rdf:type aamas:Tam .
 mal:To_be_added rdfs:label "To_be_added" .
 
 #SCHEMATA: gender
@@ -386,13 +385,13 @@ mal:gender rdfs:range mal:Gender .
 mal:Gender rdfs:subClassOf mal:MuExponent .
 mal:gender rdfs:subPropertyOf mal:muProperty .
 mal:Common aamas:lang aama:Maale .
-mal:Common rdf:type mal:Gender .
+mal:Common rdf:type aamas:Gender .
 mal:Common rdfs:label "Common" .
 mal:Fem aamas:lang aama:Maale .
-mal:Fem rdf:type mal:Gender .
+mal:Fem rdf:type aamas:Gender .
 mal:Fem rdfs:label "Fem" .
 mal:Masc aamas:lang aama:Maale .
-mal:Masc rdf:type mal:Gender .
+mal:Masc rdf:type aamas:Gender .
 mal:Masc rdfs:label "Masc" .
 
 #SCHEMATA: rootStructure
@@ -405,10 +404,10 @@ mal:rootStructure rdfs:range mal:Rootstructure .
 mal:Rootstructure rdfs:subClassOf mal:MuExponent .
 mal:rootStructure rdfs:subPropertyOf mal:muProperty .
 mal:Group1 aamas:lang aama:Maale .
-mal:Group1 rdf:type mal:Rootstructure .
+mal:Group1 rdf:type aamas:Rootstructure .
 mal:Group1 rdfs:label "Group1" .
 mal:Group2 aamas:lang aama:Maale .
-mal:Group2 rdf:type mal:Rootstructure .
+mal:Group2 rdf:type aamas:Rootstructure .
 mal:Group2 rdfs:label "Group2" .
 
 #SCHEMATA: temporal
@@ -421,823 +420,795 @@ mal:temporal rdfs:range mal:Temporal .
 mal:Temporal rdfs:subClassOf mal:MuExponent .
 mal:temporal rdfs:subPropertyOf mal:muProperty .
 mal:Clauses aamas:lang aama:Maale .
-mal:Clauses rdf:type mal:Temporal .
+mal:Clauses rdf:type aamas:Temporal .
 mal:Clauses rdfs:label "Clauses" .
 
-#PCLASSES:
+#LEXEMES: Maale
 
-mal:person aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-mal:number aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-mal:gender aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-mal:case aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:clauseType aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:derivedStem aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:modal aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:polarity aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:pos aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:possType aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:proClass aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:tam aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:temporal aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-mal:rootStructure aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
+#LexItems: Maale
 
-#LEXEMES:
-
-##LexItems
 aama:Maale-ba a aamas:Lexeme ;
-	aamas:lang aama:Maale ;
+	aamas:lang aama:maale ;
 	rdfs:label "ba" ;
-	mal:pos mal:Verb ;
-	aamas:lemma "bá-" ;
-	aamas:gloss "not exist" ;
+	mal:pos mal:Verb ; 
+	aamas:lemma "bá-" ; 
+	aamas:gloss "not exist" ; 
 	.
 aama:Maale-mu a aamas:Lexeme ;
-	aamas:lang aama:Maale ;
+	aamas:lang aama:maale ;
 	rdfs:label "mu" ;
-	mal:pos mal:Verb ;
-	aamas:lemma "múʔ" ;
-	aamas:gloss "eat" ;
+	mal:pos mal:Verb ; 
+	aamas:lemma "múʔ" ; 
+	aamas:gloss "eat" ; 
 	.
 
-#TERMCLUSTER:  maale-VInflectionTemplate
+#TERMCLUSTERS: Maale
+
+#TERMCLUSTER: maale-VInflectionTemplate
 
 mal:maale-VInflectionTemplate a aamas:Termcluster ;
 	rdfs:label "maale-VInflectionTemplate" ;
 	aamas:lang aama:Maale ;
-	rdfs:comment "A01Ch.7&amp;8 :: (summaries p. 158 &amp; p. 202). Maale verb morphology does not include subject agreement%%with partial exception of imperative-optative. Inflectional template is:[VRoot (+ dervSuff)](+ AspectMarker) + moodClauseMarker. Attested combinations of aspect and clause suffixes given in paradigm. Template: AspSuff + ClauseSuff + Note." 
+	rdfs:comment "A01Ch.7&8 :: (summaries p. 158 & p. 202). Maale verb morphology does not include subject agreement,with partial exception of imperative-optative. Inflectional template is:[VRoot (+ dervSuff)](+ AspectMarker) + moodClauseMarker. Attested combinations of aspect and clause suffixes given in paradigm. Template: AspSuff + ClauseSuff + Note." 
 	.
 
-aama:ID5f297742-5df4-4c99-8e54-3f4a3ca93b68 a aamas:Term ;
+aama:ID789d1c21-a8c7-4945-a795-2508c2c0be4e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -tsi-ró +" ;
-	mal:token "Common . . .  -tsi-ró" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Causal ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
 	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Causal ;
-	.
-
-aama:IDa17e73d1-e7ef-4e1d-9037-eca6e4019fcb a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -tsi-ró +" ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "Common . . .  -tsi-ró" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:Perfective ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Causal ;
+	mal:token-note-template "Common + -tsi-ró +" ;
 	.
 
-aama:ID0279a2a9-3305-49d2-9135-9944d4dd320e a aamas:Term ;
+aama:ID6ba45773-1029-4137-bf63-b3376ce0acd8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-ondó + Common  + ask permission" ;
-	mal:token "-ondó . . .  Common ['ask permission']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:InterrPerm ;
-	mal:polarity mal:Affirmative ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Causal ;
 	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:Perfective ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -tsi-ró" ;
+	mal:token-note-template "Common + -tsi-ró +" ;
+	.
+
+aama:IDb1cdc064-b87f-48e7-880c-d78acdf0928b a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
 	mal:clauseType mal:ClauseC ;
-	.
-
-aama:ID21ea0fb8-9cfd-4ba1-9115-c461e68baa30 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -to +" ;
-	mal:token "Common . . .  -to" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
 	mal:modal mal:ModC ;
-	mal:clauseType mal:Conditional ;
-	.
-
-aama:IDa158d33e-2c31-441a-923c-9a797de27aee a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -to +" ;
-	mal:token "Common . . .  -to" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:Perfective ;
 	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Conditional ;
-	.
-
-aama:IDd6a466e5-3466-4e24-ad06-e17f6f2d3d56 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + Common  + SequentialSimultaneous_Same_Subject" ;
-	mal:token "Common . . .  Common ['SequentialSimultaneous_Same_Subject']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Converb1 ;
-	.
-
-aama:IDc6e17e62-db03-4121-9153-ecf636da1245 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -ém  + different subject" ;
-	mal:token "Common . . .  -ém ['different subject']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Converb2 ;
-	.
-
-aama:ID3e168cee-c474-436e-aa0a-8ddc2a137571 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + Common  + Sequential_Same_Subject" ;
-	mal:token "Common . . .  Common ['Sequential_Same_Subject']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Converb3 ;
-	.
-
-aama:IDb754651a-3641-44c8-a1ca-e011c0fc117b a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -y  + contrary to expectation" ;
-	mal:token "Common . . .  -y ['contrary to expectation']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:Mirative ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:ID100bd27e-4469-4f21-86ec-88723a7bfb67 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -y + contrary to expectation" ;
-	mal:token "Common . . .  -y ['contrary to expectation']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:Perfective ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:Mirative ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:ID550febed-f27c-441b-af3e-d4004685b2ce a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-andá- + -ne + " ;
-	mal:token "-andá- . . .  -ne" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectiveFuture ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:ID184ef95e-5b80-4270-b9c4-36066d5e2c51 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -ne + " ;
-	mal:token "Common . . .  -ne" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:ID636f4a1a-4e6f-4c6b-a697-ba2222050010 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -ne + " ;
-	mal:token "Common . . .  -ne" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:Perfective ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:IDeab91d18-0f40-4adf-b8a0-fcc6e3c99ddd a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-uwá- + -se + " ;
-	mal:token "-uwá- . . .  -se" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:Imperfective ;
-	mal:polarity mal:Negative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:IDd36a1e38-498a-4161-aed7-2a91b11d717a a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-ibá- + -se + " ;
-	mal:token "-ibá- . . .  -se" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:Perfective ;
-	mal:polarity mal:Negative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:IDc03cbb9e-6a41-4caf-8a42-cea2428477bf a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -ískáy +" ;
-	mal:token "Common . . .  -ískáy" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:NewInfo ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:ID916453d2-47c5-4011-8ced-b4567d733872 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -ke +" ;
-	mal:token "Common . . .  -ke" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:NonVerbal ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:IDc961556f-647a-4933-9725-99111e3e6a67 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -íya +" ;
-	mal:token "Common . . .  -íya" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:Perfective ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:IDfa87b806-58ca-4d07-b240-cc0010397673 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -i + Emphatic" ;
-	mal:token "Common . . .  -i ['Emphatic']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:Veridical ;
-	mal:clauseType mal:Declarative ;
-	.
-
-aama:ID0d3a7cba-9a37-4a80-b276-3996cdaf4dca a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + Common +" ;
-	mal:token "Common . . .  Common" ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Imperative ;
-	.
-
-aama:ID72b18693-e67c-4c6c-b925-dd030a48b779 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -uwáte +" ;
-	mal:token "Common . . .  -uwáte" ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Imperative ;
-	.
-
-aama:ID19b0fb56-c378-44ec-aea1-ce8985dbebe7 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -íppo +" ;
-	mal:token "Common . . .  -íppo" ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Negative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Imperative ;
-	.
-
-aama:IDed5c3f3a-f8cb-43e2-941c-7ffc89acc35b a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -íppote +" ;
-	mal:token "Common . . .  -íppote" ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Negative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Imperative ;
-	.
-
-aama:ID1ca5b4e9-c8b2-460c-9962-c9750c70bde0 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-andá- + -sinway  + Dubitative" ;
-	mal:token "-andá- . . .  -sinway ['Dubitative']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectiveFuture ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:InterrDubitative ;
-	.
-
-aama:IDe83f18d8-3d91-465d-9b36-4b6e89ebe8a0 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
-	mal:gender mal:Common ;
-	aamas:lexeme aama:Maale-mu ;
-	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-ondó + -sinway  + DubitativePermission" ;
-	mal:token "-ondó . . .  -sinway ['DubitativePermission']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
 	mal:tam mal:InterrPerm ;
-	mal:polarity mal:Affirmative ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "-ondó . . .  Common ['ask permission']" ;
+	mal:token-note-template "-ondó + Common  + ask permission" ;
+	.
+
+aama:IDfe2461e3-b54d-475c-8f3a-3b0972c0844d a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Conditional ;
 	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -to" ;
+	mal:token-note-template "Common + -to +" ;
+	.
+
+aama:ID2bd59275-166b-47ff-a7c1-c2c0adbb81ad a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Conditional ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:Perfective ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -to" ;
+	mal:token-note-template "Common + -to +" ;
+	.
+
+aama:IDdc49b3cd-10fa-4ab6-b53d-227cc18c0a6f a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Converb1 ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  Common ['SequentialSimultaneous_Same_Subject']" ;
+	mal:token-note-template "Common + Common  + SequentialSimultaneous_Same_Subject" ;
+	.
+
+aama:ID38f42fb4-50f6-4704-990b-a034057ee2ea a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Converb2 ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -ém ['different subject']" ;
+	mal:token-note-template "Common + -ém  + different subject" ;
+	.
+
+aama:ID103ea8f7-4e50-4183-b775-5a511f490857 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Converb3 ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  Common ['Sequential_Same_Subject']" ;
+	mal:token-note-template "Common + Common  + Sequential_Same_Subject" ;
+	.
+
+aama:ID2412072e-08f9-4170-9cb2-ed2f6819f8b5 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:Mirative ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -y ['contrary to expectation']" ;
+	mal:token-note-template "Common + -y  + contrary to expectation" ;
+	.
+
+aama:ID408e8873-6708-4e03-8a62-7f85121623e4 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:Mirative ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:Perfective ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -y ['contrary to expectation']" ;
+	mal:token-note-template "Common + -y + contrary to expectation" ;
+	.
+
+aama:IDb481b1a9-a4cd-4dd5-a520-3127d263b50a a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectiveFuture ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "-andá- . . .  -ne" ;
+	mal:token-note-template "-andá- + -ne + " ;
+	.
+
+aama:ID287a8775-9ff5-4268-b69a-ffd51f91c8c0 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -ne" ;
+	mal:token-note-template "Common + -ne + " ;
+	.
+
+aama:ID1627964d-2f42-426e-a1d5-dbadd70f973a a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:Perfective ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -ne" ;
+	mal:token-note-template "Common + -ne + " ;
+	.
+
+aama:IDaf7d6e01-6386-4e00-901b-480362cf838c a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Negative ;
+	mal:tam mal:Imperfective ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "-uwá- . . .  -se" ;
+	mal:token-note-template "-uwá- + -se + " ;
+	.
+
+aama:IDf1bf66f0-8e33-4a77-a4f7-e2c202ef3213 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Negative ;
+	mal:tam mal:Perfective ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "-ibá- . . .  -se" ;
+	mal:token-note-template "-ibá- + -se + " ;
+	.
+
+aama:ID100fa83f-2b52-459c-97f7-6359c358f3c0 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:NewInfo ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -ískáy" ;
+	mal:token-note-template "Common + -ískáy +" ;
+	.
+
+aama:ID65e59231-c812-40a8-a239-4d6d4e19f02d a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:NonVerbal ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -ke" ;
+	mal:token-note-template "Common + -ke +" ;
+	.
+
+aama:IDe044c0fb-6f22-419c-9e87-489e6ac537a7 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:Perfective ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -íya" ;
+	mal:token-note-template "Common + -íya +" ;
+	.
+
+aama:IDb74997e2-61dc-4601-bd7e-76905785cabc a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Declarative ;
+	mal:modal mal:Veridical ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -i ['Emphatic']" ;
+	mal:token-note-template "Common + -i + Emphatic" ;
+	.
+
+aama:IDbbc2d38e-22e2-4aa4-8202-a5a56355bba5 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Imperative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:token "Common . . .  Common" ;
+	mal:token-note-template "Common + Common +" ;
+	.
+
+aama:IDe594e584-d933-44fb-9b92-6baa165a728f a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Imperative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:token "Common . . .  -uwáte" ;
+	mal:token-note-template "Common + -uwáte +" ;
+	.
+
+aama:IDd997ae84-c143-4191-8d07-20a28b7882d8 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Imperative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Negative ;
+	mal:tam mal:TamC ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:token "Common . . .  -íppo" ;
+	mal:token-note-template "Common + -íppo +" ;
+	.
+
+aama:ID43ef33a0-7cb1-4961-86e2-87071dbd385b a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Imperative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Negative ;
+	mal:tam mal:TamC ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:token "Common . . .  -íppote" ;
+	mal:token-note-template "Common + -íppote +" ;
+	.
+
+aama:ID7c06ee33-e043-4c19-8f92-454e1a451fd9 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
 	mal:clauseType mal:InterrDubitative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectiveFuture ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "-andá- . . .  -sinway ['Dubitative']" ;
+	mal:token-note-template "-andá- + -sinway  + Dubitative" ;
 	.
 
-aama:ID3b985061-a035-4f78-96ef-bcc47d43cb08 a aamas:Term ;
+aama:IDf925cdf3-d658-4b37-b4bd-85f516cad831 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-andá- + -y  + asking for content info" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:InterrDubitative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:InterrPerm ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "-ondó . . .  -sinway ['DubitativePermission']" ;
+	mal:token-note-template "-ondó + -sinway  + DubitativePermission" ;
+	.
+
+aama:ID2278bba8-214c-454f-84fc-37fd1403177b a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VInflectionTemplate ;
+	mal:gender mal:Common ;
+	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
+	mal:verbMorphClass mal:InflectionTemplate ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:InterrNonPolar ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectiveFuture ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "-andá- . . .  -y ['asking for content info']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectiveFuture ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:InterrNonPolar ;
+	mal:token-note-template "-andá- + -y  + asking for content info" ;
 	.
 
-aama:IDb221e47b-bb2d-42de-9172-73950c2ce00d a aamas:Term ;
+aama:ID9b123497-c121-4115-ac2b-47e6e8fb5a06 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -y   + asking for content info" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:InterrNonPolar ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "Common . . .  -y ['asking for content info[" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:InterrNonPolar ;
+	mal:token-note-template "Common + -y   + asking for content info" ;
 	.
 
-aama:ID56a5f388-d6b8-4443-b16b-fcba6c0436c5 a aamas:Term ;
+aama:IDda4fe727-9bdd-4b62-976c-41d3bb8f9c61 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -y  + asking for content info" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:InterrNonPolar ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:Perfective ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "Common . . .  -y ['asking for content info']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:Perfective ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:InterrNonPolar ;
+	mal:token-note-template "Common + -y  + asking for content info" ;
 	.
 
-aama:IDbb1c4351-188f-4ff3-9e00-abc5643848c4 a aamas:Term ;
+aama:IDedb84979-ffe0-40d2-bbd2-e8837b8876fd a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-andá- + RisingIntonation  + yes-no" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:InterrPolar ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectiveFuture ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "-andá- . . .  RisingIntonation ['yes-no']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectiveFuture ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:InterrPolar ;
+	mal:token-note-template "-andá- + RisingIntonation  + yes-no" ;
 	.
 
-aama:ID2229d9af-6f9e-48f6-8747-cf42ee71648f a aamas:Term ;
+aama:ID2e73afa3-ddd2-466e-aee5-87446a8eeb12 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + RisingIntonation  + yes-no" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:InterrPolar ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "Common . . .  RisingIntonation ['yes-no']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:InterrPolar ;
+	mal:token-note-template "Common + RisingIntonation  + yes-no" ;
 	.
 
-aama:IDe76c13a3-1e4b-4e0e-a910-3341868dfd0d a aamas:Term ;
+aama:IDca8a6cba-7700-445b-8b4e-0ee6d1816c26 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-íya- + RisingIntonation  + yes-no" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:InterrPolar ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:Perfective ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "-íya- . . .  RisingIntonation ['yes-no']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:Perfective ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:InterrPolar ;
+	mal:token-note-template "-íya- + RisingIntonation  + yes-no" ;
 	.
 
-aama:ID7dbae503-7add-4667-be9e-9843adb6db04 a aamas:Term ;
+aama:IDe78eaef7-e8b9-4757-96a4-ec08ee57871e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -óm +" ;
-	mal:token "Common . . .  -óm" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Optative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
 	mal:person mal:Person1 ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Optative ;
+	mal:token "Common . . .  -óm" ;
+	mal:token-note-template "Common + -óm +" ;
 	.
 
-aama:ID47354852-7b40-4d6d-a913-902230466511 a aamas:Term ;
+aama:ID5f06d98f-dfed-4226-b458-d4c40801a9bc a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -óngó ~ -ónko +" ;
-	mal:token "Common . . .  -óngó ~ -ónko" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Optative ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
 	mal:person mal:Person3 ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Optative ;
+	mal:token "Common . . .  -óngó ~ -ónko" ;
+	mal:token-note-template "Common + -óngó ~ -ónko +" ;
 	.
 
-aama:ID9e48ffc1-1569-4218-884c-659f5d601e95 a aamas:Term ;
+aama:ID709c1c8d-3b95-4666-b081-bf789ad4aee7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-andá- + -nte  + Counterfactual" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Preventive ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectiveFuture ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "-andá- . . .  -nte ['Counterfactual']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectiveFuture ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Preventive ;
+	mal:token-note-template "-andá- + -nte  + Counterfactual" ;
 	.
 
-aama:ID23ad557c-144d-46b0-a0ef-9be1a899f0e2 a aamas:Term ;
+aama:IDaf1d3629-8a34-4459-bdbc-0e7ed59b3da8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "-andá- + -nte-ke  + Counterfactual_main_clause" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Preventive ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectiveFuture ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "-andá- . . .  -nte-ke ['Counterfactual_main_clause']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectiveFuture ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Preventive ;
+	mal:token-note-template "-andá- + -nte-ke  + Counterfactual_main_clause" ;
 	.
 
-aama:IDe1d01bed-b2ef-493e-9cc8-ebce99eca224 a aamas:Term ;
+aama:IDb454abe4-9eaa-4d24-b6b2-fd0b16aae50d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -nte  + Counterfactual" ;
-	mal:token "Common . . .  -nte ['Counterfactual']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Preventive ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
 	mal:tam mal:Perfective ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Preventive ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -nte ['Counterfactual']" ;
+	mal:token-note-template "Common + -nte  + Counterfactual" ;
 	.
 
-aama:ID74eefa20-e312-4c99-8f07-7c3381670643 a aamas:Term ;
+aama:ID7269c59e-aeec-48b5-82e7-7403793426a8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -aní  +  same subject (infinitive)" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Purposive1 ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "Common . . .  -aní ['same subject (infinitive)']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Purposive1 ;
+	mal:token-note-template "Common + -aní  +  same subject (infinitive)" ;
 	.
 
-aama:ID72ae9d8d-4fe2-4ce6-8f08-342292bb5960 a aamas:Term ;
+aama:IDf401970c-ce76-4113-afd5-187f6c91167e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -ani-ke  + DefiniteFuture" ;
+	mal:vmorphClass mal:Finite ;
+	mal:clauseType mal:Purposive1 ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
 	mal:token "Common . . .  -ani-ke ['DefiniteFuture']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
-	mal:clauseType mal:Purposive1 ;
+	mal:token-note-template "Common + -ani-ke  + DefiniteFuture" ;
 	.
 
-aama:ID5ab56f05-8b71-485a-866d-ee81a3f7e880 a aamas:Term ;
+aama:IDd300dfd1-6120-469d-8950-961d5d435885 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -óm  + different subject" ;
-	mal:token "Common . . .  -óm ['different subject']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
+	mal:vmorphClass mal:Finite ;
 	mal:clauseType mal:Purposive2 ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -óm ['different subject']" ;
+	mal:token-note-template "Common + -óm  + different subject" ;
 	.
 
-aama:IDc1684a57-2c74-43fd-a1d0-0a9b61a1d37c a aamas:Term ;
+aama:ID54cb2c92-8b8d-49f0-9015-4727ec5e9fe1 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -nte  + different subject" ;
-	mal:token "Common . . .  -ntem ['different subject']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
+	mal:vmorphClass mal:Finite ;
 	mal:clauseType mal:Simultaneous ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -ntem ['different subject']" ;
+	mal:token-note-template "Common + -nte  + different subject" ;
 	.
 
-aama:ID0e0c3e0a-68af-4d70-af44-c0a6ed0fe60b a aamas:Term ;
+aama:ID7d26a8cc-8f18-445b-a5fa-6015a3a04868 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -áza  +  InterrogProWhen" ;
-	mal:token "Common . . .  -áza ['InterrogProWhen']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
+	mal:vmorphClass mal:Finite ;
 	mal:clauseType mal:Temporal1 ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -áza ['InterrogProWhen']" ;
+	mal:token-note-template "Common + -áza  +  InterrogProWhen" ;
 	.
 
-aama:ID93bd238c-820c-435f-ac46-5a28068bccc5 a aamas:Term ;
+aama:ID3f51da23-310a-4150-ba5a-15b3941cf674 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VInflectionTemplate ;
-	mal:vmorphClass mal:Finite ;
-	mal:pos mal:Verb ;
 	mal:gender mal:Common ;
 	aamas:lexeme aama:Maale-mu ;
+	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:InflectionTemplate ;
-	mal:token-note-template "Common + -áána  + as soon as" ;
-	mal:token "Common . . .  -áána ['as soon as']" ;
-	mal:person mal:PersC ;
-	mal:number mal:NumC ;
-	mal:tam mal:TamC ;
-	mal:polarity mal:Affirmative ;
-	mal:modal mal:ModC ;
+	mal:vmorphClass mal:Finite ;
 	mal:clauseType mal:Temporal2 ;
+	mal:modal mal:ModC ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:TamC ;
+	mal:number mal:NumC ;
+	mal:person mal:PersC ;
+	mal:token "Common . . .  -áána ['as soon as']" ;
+	mal:token-note-template "Common + -áána  + as soon as" ;
 	.
 
-#TERMCLUSTER:  maale-P2ary
+#TERMCLUSTER: maale-P2ary
 
 mal:maale-P2ary a aamas:Termcluster ;
 	rdfs:label "maale-P2ary" ;
@@ -1245,163 +1216,163 @@ mal:maale-P2ary a aamas:Termcluster ;
 	rdfs:comment "A01#4.2." 
 	.
 
-aama:IDc79d0a3d-db1e-4ca0-a848-53071b38f6f8 a aamas:Term ;
+aama:IDa5f47d36-0778-459f-a5f4-4c8182453bb9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
-	mal:token "ʔi-z-á" ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
+	mal:token "ʔi-z-á" ;
 	.
 
-aama:ID58ae16f7-ff8f-464f-8a1a-083df0092515 a aamas:Term ;
+aama:IDbdaab2cd-746a-4ea9-928e-8e050694f58b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
-	mal:token "ʔi-z-ó" ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
+	mal:token "ʔi-z-ó" ;
 	.
 
-aama:ID15451a76-455f-4c37-be16-b75e628cab03 a aamas:Term ;
+aama:IDc9e32992-564b-44fa-b0f1-ad35a06897bf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
-	mal:token "ʔ-ntsi" ;
-	mal:gender mal:Common ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Plural ;
 	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Absolutive ;
-	.
-
-aama:ID0a37f1ae-283b-4d6b-a563-505235c5d6c3 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
-	mal:pmorphClass mal:ProMorph ;
-	mal:proClass mal:Pro2ary ;
-	mal:token "í-yát-ó" ;
 	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:case mal:Absolutive ;
+	mal:token "ʔ-ntsi" ;
 	.
 
-aama:IDa2e0c111-1de1-4afd-98a2-1766bb3c2627 a aamas:Term ;
+aama:IDb7debe96-618b-4c3d-9436-c4090d6e8d79 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
+	mal:token "í-yát-ó" ;
+	.
+
+aama:IDf55cbf6d-8ee3-447c-b014-825f9387fc49 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-P2ary ;
+	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
+	mal:proClass mal:Pro2ary ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔi-z-í" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
 	.
 
-aama:IDcf4b76ee-4f0c-427d-9f49-f1f1ede86e59 a aamas:Term ;
+aama:ID4e2b3806-8090-4702-986e-1cb570611f1b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
-	mal:token "ʔi-z-á" ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
+	mal:token "ʔi-z-á" ;
 	.
 
-aama:ID65057acf-47d8-453b-ade7-85a7c9cb09b4 a aamas:Term ;
+aama:ID24cafcb5-cef9-4f95-ba4c-f293217c92b3 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
+	mal:case mal:Nominative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔ-ntsí" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Nominative ;
 	.
 
-aama:IDe10091b4-6cb2-477f-a88a-865d2addf542 a aamas:Term ;
+aama:IDbdc0927b-6228-427a-a9a1-d146fedd5d95 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
+	mal:case mal:Nominative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "í-yát-á" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:case mal:Nominative ;
 	.
 
-aama:IDfc7932ef-aee4-493f-a114-46d338dc0c72 a aamas:Term ;
+aama:ID56464e9a-af2a-4f6d-8f24-f92f486081fe a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
-	mal:token "ʔi-z-á" ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
+	mal:token "ʔi-z-á" ;
 	.
 
-aama:IDbd969538-0d41-46a8-a061-2c0ab0377ddd a aamas:Term ;
+aama:IDac2d8622-878a-4343-b0ef-9878ec7e29eb a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
-	mal:token "ʔi-z-ó" ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
+	mal:token "ʔi-z-ó" ;
 	.
 
-aama:ID0e37a849-b4ae-4e63-a4f9-930e7384fddc a aamas:Term ;
+aama:IDc3a874fd-f6d1-4ef4-9c2d-7275b95269ce a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
-	mal:token "ʔ-ntsi" ;
-	mal:gender mal:Common ;
+	mal:case mal:Possessive ;
+	mal:number mal:Plural ;
 	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Possessive ;
+	mal:gender mal:Common ;
+	mal:token "ʔ-ntsi" ;
 	.
 
-aama:ID1ff86199-4ee3-4ae9-a8da-3cceb3180354 a aamas:Term ;
+aama:ID75650487-d2de-4330-84b3-d28b5fb679fc a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-P2ary ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Pro2ary ;
-	mal:token "í-yát-ó" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
 	mal:case mal:Possessive ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
+	mal:token "í-yát-ó" ;
 	.
 
-#TERMCLUSTER:  maale-PBasicPro
+#TERMCLUSTER: maale-PBasicPro
 
 mal:maale-PBasicPro a aamas:Termcluster ;
 	rdfs:label "maale-PBasicPro" ;
@@ -1409,124 +1380,124 @@ mal:maale-PBasicPro a aamas:Termcluster ;
 	rdfs:comment "A01#4.1" 
 	.
 
-aama:IDb1a263a7-77a2-4ac3-ba66-8a343cd5c838 a aamas:Term ;
+aama:ID3d4309c8-8d8f-4446-a962-5cf34e4f317e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:BasicPro ;
+	mal:case mal:CaseC ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "tá" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:CaseC ;
 	.
 
-aama:ID989cd7de-53f5-480e-94b1-2096b2742e7c a aamas:Term ;
+aama:ID6f5ebf2f-f540-42e4-9044-fafe78abd630 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:BasicPro ;
+	mal:case mal:CaseC ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "né" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:CaseC ;
 	.
 
-aama:ID91bf7e59-1ded-4077-ba40-302014b2eb34 a aamas:Term ;
+aama:ID352af599-3902-47a8-8af0-d7825cdf5d4f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:BasicPro ;
-	mal:token "⊤" ;
-	mal:gender mal:Masc ;
+	mal:case mal:CaseC ;
+	mal:number mal:Singular ;
 	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:CaseC ;
+	mal:gender mal:Masc ;
+	mal:token "⊤" ;
 	.
 
-aama:IDcc724baa-ef90-45b1-a8d2-8088b2480586 a aamas:Term ;
+aama:IDacb01e70-e0f7-4880-91ab-9e27fa4ea408 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:BasicPro ;
-	mal:token "pe" ;
-	mal:gender mal:Masc ;
+	mal:case mal:CaseC ;
+	mal:number mal:Singular ;
 	mal:person mal:Person3Ref ;
-	mal:number mal:Singular ;
-	mal:case mal:CaseC ;
-	.
-
-aama:IDbc1cd61f-15b8-44f6-a884-9df3a913c554 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
-	mal:pmorphClass mal:ProMorph ;
-	mal:proClass mal:BasicPro ;
-	mal:token "nú" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:CaseC ;
-	.
-
-aama:IDee40f279-d38d-4619-9249-0287384f69c7 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
-	mal:pmorphClass mal:ProMorph ;
-	mal:proClass mal:BasicPro ;
-	mal:token "ta" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
-	.
-
-aama:ID97e88dba-b6df-4dac-910b-ce45c7810478 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
-	mal:pmorphClass mal:ProMorph ;
-	mal:proClass mal:BasicPro ;
-	mal:token "ne" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
-	.
-
-aama:IDf3396f70-0b64-41c8-9ba9-50eddfcbd7c5 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
-	mal:pmorphClass mal:ProMorph ;
-	mal:proClass mal:BasicPro ;
-	mal:token "⊤" ;
 	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
+	mal:token "pe" ;
 	.
 
-aama:ID766eb789-4e96-447f-84ce-f96686dce403 a aamas:Term ;
+aama:IDc9641251-e4b5-4d1a-b2df-6a52c86d3860 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PBasicPro ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:BasicPro ;
-	mal:token "nu" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
+	mal:case mal:CaseC ;
 	mal:number mal:Plural ;
-	mal:case mal:Possessive ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
+	mal:token "nú" ;
 	.
 
-#TERMCLUSTER:  maale-PCaseMarking
+aama:ID01fa7e9f-922c-4b4b-8128-0a4cf3070223 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-PBasicPro ;
+	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
+	mal:proClass mal:BasicPro ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
+	mal:token "ta" ;
+	.
+
+aama:IDd138ff2a-7a93-4b5e-b167-5021562a7462 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-PBasicPro ;
+	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
+	mal:proClass mal:BasicPro ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
+	mal:token "ne" ;
+	.
+
+aama:ID35ae7fb4-8e59-47d3-a4c6-f549552b2141 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-PBasicPro ;
+	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
+	mal:proClass mal:BasicPro ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
+	mal:token "⊤" ;
+	.
+
+aama:ID8d39b95c-4edb-4d9f-8c06-6e25afb9d6a6 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-PBasicPro ;
+	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
+	mal:proClass mal:BasicPro ;
+	mal:case mal:Possessive ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
+	mal:token "nu" ;
+	.
+
+#TERMCLUSTER: maale-PCaseMarking
 
 mal:maale-PCaseMarking a aamas:Termcluster ;
 	rdfs:label "maale-PCaseMarking" ;
@@ -1534,462 +1505,462 @@ mal:maale-PCaseMarking a aamas:Termcluster ;
 	rdfs:comment "A01#4.6" 
 	.
 
-aama:ID5d8d6035-24fd-43d3-9e5c-bbb528597def a aamas:Term ;
+aama:ID7bf3e86b-f43c-4baf-ad22-711958da20cf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Ablative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "tááppe" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Ablative ;
 	.
 
-aama:IDd4cefee7-d3aa-4363-8c29-2d9463156eff a aamas:Term ;
+aama:ID9e6da1e7-7fbc-4485-9c82-ad4010fb50f7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Ablative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "nééppe" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Ablative ;
 	.
 
-aama:ID7950917f-053b-412e-93af-176de55b3daf a aamas:Term ;
+aama:ID5873e868-f7fd-4bc3-b8a5-4d24a8033cc4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Ablative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔízáppe" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Ablative ;
 	.
 
-aama:ID078caa15-355f-45b3-9a06-2742773b8347 a aamas:Term ;
+aama:ID5a161263-1304-400d-ba34-62045793ced9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Ablative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Fem ;
 	mal:token "ʔízóppe" ;
-	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Ablative ;
 	.
 
-aama:ID80223297-14dc-4882-bf61-a6142a2561e4 a aamas:Term ;
+aama:IDdb094489-6ce5-4feb-8e6d-9ce99b223720 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Ablative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "núúppe" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:Ablative ;
 	.
 
-aama:IDd44aa75a-838e-417d-bb69-0c5c2d2d771d a aamas:Term ;
+aama:ID2881fdb7-702a-4565-9d20-4dd96ba3afc5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Ablative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔíntsippe" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Ablative ;
 	.
 
-aama:ID2158addc-deff-4520-91b7-f1656331ba0d a aamas:Term ;
+aama:IDeba72496-655c-4daa-a8c8-e223bae256fe a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Ablative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "ʔiyátóppe" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:case mal:Ablative ;
 	.
 
-aama:ID9b95ab73-1b35-44c6-b4ea-77cca1bc6071 a aamas:Term ;
+aama:IDe2a7856c-1131-4976-98ca-da635f01ee4a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "táná" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:IDb874e6ae-4a8a-44e0-8399-1daf4fb98611 a aamas:Term ;
+aama:IDe2805184-1115-4031-8182-0156d902d195 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "néná" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:IDf502fd51-8a54-4cd5-b571-fdc4d522b1d4 a aamas:Term ;
+aama:ID4c0b448d-d129-4413-82df-8adcb296398f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔízá" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:IDa795a317-2d21-457d-99c2-c79d3659082e a aamas:Term ;
+aama:IDb4871c9e-9130-4c46-b5bd-821a17512100 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Fem ;
 	mal:token "ʔízó" ;
-	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:IDbbc1daf3-3701-47c8-9f2e-30483a9194fe a aamas:Term ;
+aama:ID71b3b909-ff86-4359-8b1a-afdbf477a97c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "núná" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:IDf6631e3f-0077-4ea5-9770-f50c7d57f6ad a aamas:Term ;
+aama:IDa853f9fe-ec7f-4337-8493-dead09e0acdb a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔíntsi" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:ID2a90f471-c113-42ac-a6cb-d731de03ddbc a aamas:Term ;
+aama:ID4d836375-5ecf-4e64-b4f3-cfb7434bdf10 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "ʔiyátó" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:ID7aad2c2d-9a55-4a7d-a650-38c21b56712b a aamas:Term ;
+aama:IDfd5cbb22-7872-47d4-9e3c-e16be552c941 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Dative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "táám" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Dative ;
 	.
 
-aama:IDdc812177-d4f2-4b02-9070-cc042b936657 a aamas:Term ;
+aama:ID52c06ef2-7b24-47c8-b1a2-56fcfbdd9b13 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Dative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "néém" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Dative ;
 	.
 
-aama:ID008ec9ab-d4ce-4af6-935d-b71b48ef8853 a aamas:Term ;
+aama:ID558f5e95-4f89-46ad-9638-745220349b2e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Dative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔízám" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Dative ;
 	.
 
-aama:ID020c0880-5861-4fe0-a727-a7f8fa789aa6 a aamas:Term ;
+aama:IDa25e9c13-476a-493a-ba5c-bf568b56c805 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Dative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Fem ;
 	mal:token "ʔízóm" ;
-	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Dative ;
 	.
 
-aama:IDe2016bb3-c270-4513-9f01-3481d3c703ed a aamas:Term ;
+aama:ID64c3d5fc-ee69-4118-b7fe-f6466aff7d43 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Dative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "núúm" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:Dative ;
 	.
 
-aama:IDae97d7dd-a8d4-41d1-97ff-9923a1742637 a aamas:Term ;
+aama:IDcf4ad278-94b4-4883-952b-c5e9eff5a64a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Dative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔíntsim" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Dative ;
 	.
 
-aama:IDe855946f-f2fd-444c-b470-c7335e158c86 a aamas:Term ;
+aama:ID88c694a1-446e-4e80-9b29-bebed855f3e3 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Dative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "ʔiyátóm" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:case mal:Dative ;
 	.
 
-aama:ID7f35f8ff-6804-4c18-b6d3-98f1a24b959d a aamas:Term ;
+aama:ID87c6662e-50cc-42f0-9ea8-10564c2f332e a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Instrumental ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "táána" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Instrumental ;
 	.
 
-aama:ID4d7deb7d-83fb-410f-95bb-51bccbf9ce84 a aamas:Term ;
+aama:IDa2fdbe99-03b3-48e9-a598-dabe7754d306 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Instrumental ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "nééna" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Instrumental ;
 	.
 
-aama:IDdba93c6d-09cf-465d-9968-e1499e6b3640 a aamas:Term ;
+aama:ID174ba4a3-8253-4d41-8f39-228c14f12412 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Instrumental ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔízána" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Instrumental ;
 	.
 
-aama:ID55fafd92-b12a-4474-bc20-1f3ba8fcde87 a aamas:Term ;
+aama:IDed974fbc-953d-4da3-a7fb-aea180b2424f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Instrumental ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Fem ;
 	mal:token "ʔízóna" ;
-	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Instrumental ;
 	.
 
-aama:ID6ed9eb57-8f63-46ce-ac99-99e24ee28f78 a aamas:Term ;
+aama:ID4e0c4ad2-be4e-4cb5-862f-88f1a343af54 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Instrumental ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "núúna" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:Instrumental ;
 	.
 
-aama:IDad3c9e3f-7fc9-44e5-86fa-7118e9a30c1b a aamas:Term ;
+aama:ID7b968806-d12c-4a09-9c0a-659900ad2bd0 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Instrumental ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔíntsina" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Instrumental ;
 	.
 
-aama:IDba900205-229d-4750-947d-d9082cd2873e a aamas:Term ;
+aama:ID12847cff-0829-4d86-bda3-b82e1ba8098b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Instrumental ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "ʔiyátóna" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:case mal:Instrumental ;
 	.
 
-aama:IDa2a50d2e-c43e-4729-bd7e-df8cb9483ec7 a aamas:Term ;
+aama:IDdc7f243e-1540-4ecd-a7ed-db535d612c21 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "táání" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
 	.
 
-aama:ID2dd8866b-c841-48ea-a3a1-78ee4fdbfc73 a aamas:Term ;
+aama:ID8155456a-6793-4953-85b9-85e5ec2f678d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "nééní" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
 	.
 
-aama:ID2dcf0534-4ccf-4423-b674-41c230cdbb20 a aamas:Term ;
+aama:ID00e372f1-5a75-459c-9fa1-101e4d9a3bea a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
-	mal:token "ʔízí / ʔííní" ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
+	mal:token "ʔízí / ʔííní" ;
 	.
 
-aama:ID5d7d51db-a9ba-4f37-84a7-5ef0d87cb3a6 a aamas:Term ;
+aama:IDcc2daa65-a3ad-4990-99fa-13c1bae94eb9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
-	mal:token "⊤" ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
+	mal:token "⊤" ;
 	.
 
-aama:ID719a61b5-70a2-4f06-a89f-b48069b55d71 a aamas:Term ;
+aama:IDdd67cb3c-7f6d-4fdb-8746-a731b12cc322 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
-	mal:token "núúní" ;
-	mal:gender mal:Common ;
+	mal:case mal:Nominative ;
+	mal:number mal:Plural ;
 	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:Nominative ;
+	mal:gender mal:Common ;
+	mal:token "núúní" ;
 	.
 
-aama:ID971069b5-2e2b-494a-8a27-5f03e00eaf74 a aamas:Term ;
+aama:ID2dd36383-4aad-41fa-b627-aaf66e3ecdce a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
-	mal:token "ʔíntsí" ;
-	mal:gender mal:Common ;
+	mal:case mal:Nominative ;
+	mal:number mal:Plural ;
 	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Nominative ;
+	mal:gender mal:Common ;
+	mal:token "ʔíntsí" ;
 	.
 
-aama:IDf413b964-9402-4448-81ab-3b0440c6754d a aamas:Term ;
+aama:ID89dd44fc-641c-42b2-b9bc-633a5880b338 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PCaseMarking ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:CaseMarking ;
-	mal:token "ʔiyáta" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
 	mal:case mal:Nominative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
+	mal:token "ʔiyáta" ;
 	.
 
-#TERMCLUSTER:  maale-PPoss
+#TERMCLUSTER: maale-PPoss
 
 mal:maale-PPoss a aamas:Termcluster ;
 	rdfs:label "maale-PPoss" ;
@@ -1997,756 +1968,756 @@ mal:maale-PPoss a aamas:Termcluster ;
 	rdfs:comment "A01Table 4.2 :: PossType:poss1 – basic;poss2 – when possessed noun is odified;possNom1 – possessive noun involving known possession;possNom2 – possessive noun involving unknown possession" 
 	.
 
-aama:ID99500bd6-3444-4f6a-b853-9caf6196f1d1 a aamas:Term ;
+aama:ID1101e8c3-2187-483c-8820-a1799a2d5920 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss1 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "ta" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:possType mal:Poss1 ;
 	.
 
-aama:IDff68a22c-baec-4757-94b2-fbcd973349f2 a aamas:Term ;
+aama:IDb320dd16-bc14-472b-89bf-cbc1ba46b113 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss1 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ne" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:possType mal:Poss1 ;
 	.
 
-aama:IDdd4340b4-a94d-4a70-a05e-1e225e8771f6 a aamas:Term ;
+aama:IDe4a28f31-19f9-4e68-8a3e-50a9ef97cd4a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss1 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔízá" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:possType mal:Poss1 ;
 	.
 
-aama:ID56b31223-daea-4616-a95d-b84ddd0a8818 a aamas:Term ;
+aama:ID60c341af-c30e-44b6-b3ea-6542deba1fc8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss1 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Fem ;
 	mal:token "ʔízó" ;
-	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:possType mal:Poss1 ;
 	.
 
-aama:IDe3f09f33-5a45-4d1e-9904-d00097670dee a aamas:Term ;
+aama:ID54fc5904-bb94-41c0-849e-95e99c1669bb a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss1 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "nu" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:possType mal:Poss1 ;
 	.
 
-aama:ID80343e7c-5cb3-408e-aa7f-1958572f8cea a aamas:Term ;
+aama:IDab11c54c-88c1-4bf1-ae05-d14ef3aeb178 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss1 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔíntsi" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:possType mal:Poss1 ;
 	.
 
-aama:ID7b8bc6cf-85bb-4a6d-9422-c536ce2d8cd8 a aamas:Term ;
+aama:IDc5aea214-4ef5-4546-8db4-03c9fe48eeba a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss1 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "ʔiyátó" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:possType mal:Poss1 ;
 	.
 
-aama:IDf48db1f1-cbfb-4db6-9274-003aacb021a7 a aamas:Term ;
+aama:IDbb9d91a0-f6a4-45db-9133-7854d2f4184a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss2 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "taa-kó" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:possType mal:Poss2 ;
 	.
 
-aama:IDd23597c3-9db7-45eb-af23-560505db6cdf a aamas:Term ;
+aama:IDd555461b-745d-4afe-9590-e5c457338489 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss2 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "nee-kó" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:possType mal:Poss2 ;
 	.
 
-aama:ID879dbb65-a3ac-4e89-b36a-9f0bf183171e a aamas:Term ;
+aama:IDfee2b2ec-5d5f-432c-b5e1-a515ccd56a29 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss2 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔíza-ko" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:possType mal:Poss2 ;
 	.
 
-aama:IDba11b87e-820d-4184-8bbf-ac17079b013a a aamas:Term ;
+aama:ID6b60da5f-632f-4ef8-8ea6-d4d13b00dd30 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss2 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Fem ;
 	mal:token "ʔízo-ko" ;
-	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:possType mal:Poss2 ;
 	.
 
-aama:ID5d6fba2c-fcbe-436d-a82b-6b48a9edd658 a aamas:Term ;
+aama:IDb0e39e53-ebe1-45e6-8928-b63019ff97c1 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss2 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "nuu-ko" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:possType mal:Poss2 ;
 	.
 
-aama:ID78c172d7-7ca3-4ea5-8f53-264420fca683 a aamas:Term ;
+aama:ID8e89f43f-94c5-4cd7-bba7-39978608e18f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss2 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔíntsi-ko" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:possType mal:Poss2 ;
 	.
 
-aama:ID8ff8814b-e4a6-41a2-adad-a2a7c8f4b336 a aamas:Term ;
+aama:ID55174778-7dae-4a3a-aa7e-01506e86d6ad a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:Poss2 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "ʔiyátó-ko" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:possType mal:Poss2 ;
 	.
 
-aama:IDc0b58a98-4ded-4a95-a3c8-1ff1aa365be4 a aamas:Term ;
+aama:ID92312e6f-9a26-4ee0-ae90-1449f01c6c4d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom1 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "taa-ró" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID6667fe98-3780-455a-8605-3caa532e94b9 a aamas:Term ;
+aama:IDe2cc41cb-52cb-4617-b73e-190dfd0c0262 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom1 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "nee-ró" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:possType mal:PossNom1 ;
 	.
 
-aama:IDe39f61ad-0b46-4ca7-bd04-161b1dff8106 a aamas:Term ;
+aama:ID9f88c09e-37dd-4daf-b5c4-2d72b84ca231 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom1 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔíza-ro" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID72da3999-09ed-487b-9444-f54614e560a7 a aamas:Term ;
+aama:IDe6aae427-fb75-448d-bc7a-ed0bb4db079c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom1 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Fem ;
 	mal:token "ʔízó-ro" ;
-	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID339b1567-d7bf-402b-a7cb-f6c9178e550d a aamas:Term ;
+aama:ID0eca2218-ff2a-4727-8825-1ca34c082371 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom1 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "nuu-ró" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID1c5ee1cd-7710-4525-ae3f-2028c02a2ad0 a aamas:Term ;
+aama:ID55db3131-56af-47e3-ae09-5a9536189dad a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom1 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔíntsi-ro" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID20f47809-d54b-4401-a6b6-98b45540756f a aamas:Term ;
+aama:ID444c81d6-468f-4bde-b3c6-ea37ede2422b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom1 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "ʔiyátó-ro" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:possType mal:PossNom1 ;
 	.
 
-aama:ID864e207a-028c-4334-8428-4574c3dc1651 a aamas:Term ;
+aama:IDea199ea9-b7d6-4a55-87c3-143592e57c9c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom2 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "taa-ssi" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:possType mal:PossNom2 ;
 	.
 
-aama:ID51af20e3-1937-4cd6-9c78-90a2b49a8afa a aamas:Term ;
+aama:ID77b7fbc0-dceb-4f2e-8d80-c5163b7ecc41 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
+	mal:possType mal:PossNom2 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "nee-ssi" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:possType mal:PossNom2 ;
 	.
 
-aama:IDe9d7fa3a-d5ed-400e-8bf5-ab09891c589a a aamas:Term ;
+aama:ID3d0751c5-3113-4e4f-8045-84526d44b4b2 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
-	mal:token "ʔízá-ssi" ;
+	mal:possType mal:PossNom2 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:possType mal:PossNom2 ;
+	mal:token "ʔízá-ssi" ;
 	.
 
-aama:ID32663e80-a430-466a-8a2e-d78016d4d1e8 a aamas:Term ;
+aama:ID3eaba245-83a0-47c4-88cb-a839929d6d86 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
-	mal:token "ʔízó-ssi" ;
+	mal:possType mal:PossNom2 ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:possType mal:PossNom2 ;
+	mal:token "ʔízó-ssi" ;
 	.
 
-aama:ID1f935eeb-1cb9-47a7-8366-8f88fe52a886 a aamas:Term ;
+aama:ID6b680bf4-1eef-455a-97a0-52835ff9db3b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
-	mal:token "nuu-ssi" ;
-	mal:gender mal:Common ;
+	mal:possType mal:PossNom2 ;
+	mal:number mal:Plural ;
 	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:possType mal:PossNom2 ;
+	mal:gender mal:Common ;
+	mal:token "nuu-ssi" ;
 	.
 
-aama:ID44483fb0-d6b1-40da-8014-8ee96d954cc4 a aamas:Term ;
+aama:IDbec1b329-6381-4025-bd50-2ca55bec93d8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
-	mal:token "ʔíntsi-ssi" ;
-	mal:gender mal:Common ;
+	mal:possType mal:PossNom2 ;
+	mal:number mal:Plural ;
 	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:possType mal:PossNom2 ;
+	mal:gender mal:Common ;
+	mal:token "ʔíntsi-ssi" ;
 	.
 
-aama:ID67e47b20-2b8a-4df7-8292-c6a877275492 a aamas:Term ;
+aama:IDd02c8cf5-1b06-4da5-a52d-e2f34b9a35ce a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PPoss ;
 	mal:case mal:Possessive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProPoss ;
-	mal:token "ʔiyátó-ssi" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
 	mal:possType mal:PossNom2 ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
+	mal:token "ʔiyátó-ssi" ;
 	.
 
-#TERMCLUSTER:  maale-PProInd
+#TERMCLUSTER: maale-PProInd
 
 mal:maale-PProInd a aamas:Termcluster ;
 	rdfs:label "maale-PProInd" ;
 	aamas:lang aama:Maale ;
-	rdfs:comment "A01Table 4. ::  3Ref%%called logophoric third person – 3LOGby Amha2001%%is unmarked for case%%num%%and gen. This pronoun occurs only when there is a co-referential third person subject in the same sentence. It cannot e used co-referentially across sentences(p. 87)." 
+	rdfs:comment "A01Table 4. ::  3Ref,called logophoric third person – 3LOGby Amha2001,is unmarked for case,num,and gen. This pronoun occurs only when there is a co-referential third person subject in the same sentence. It cannot e used co-referentially across sentences(p. 87)." 
 	.
 
-aama:IDe05e8e68-12c4-4a8c-9244-63f45e293c7a a aamas:Term ;
+aama:ID56fa416d-7b4d-4cb9-9644-66e9969e3cf2 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "táná" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:ID35c8235a-abbe-4a72-add3-67ed1946cabb a aamas:Term ;
+aama:IDedbc1138-96ff-4c8b-a725-afc8163982af a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "néná" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:ID64249e71-5606-4e72-bf96-c3681c94d3b0 a aamas:Term ;
+aama:IDf7d39432-921c-4599-8fc4-78c0c0fce7c5 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔízá" ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
+	mal:token "ʔízá" ;
 	.
 
-aama:IDd92b97f8-ccf3-4d4f-b370-03618729dea0 a aamas:Term ;
+aama:IDe6ae85a8-6240-47b1-a0dd-73d50f81e2ad a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔízó" ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Absolutive ;
+	mal:token "ʔízó" ;
 	.
 
-aama:ID7e8c5a31-3779-4d12-bc7e-dc11178e94c2 a aamas:Term ;
+aama:ID5e8ac63b-916b-46d3-b180-b935203457ea a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "núná" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:Absolutive ;
 	.
 
-aama:ID39707dd6-2ff9-414a-97e6-0e4132d8ea7e a aamas:Term ;
+aama:ID0abed9d1-c722-407a-8b55-bc7679739fb9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔíntsi" ;
-	mal:gender mal:Common ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Plural ;
 	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Absolutive ;
+	mal:gender mal:Common ;
+	mal:token "ʔíntsi" ;
 	.
 
-aama:IDf9449abe-8bd7-4a85-8d39-71dddd637082 a aamas:Term ;
+aama:ID412cbadb-0f5f-4378-ae6b-d51dbd8834d2 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔiyátó" ;
-	mal:gender mal:Common ;
+	mal:case mal:Absolutive ;
+	mal:number mal:Plural ;
 	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:case mal:Absolutive ;
+	mal:gender mal:Common ;
+	mal:token "ʔiyátó" ;
 	.
 
-aama:ID113e6ba8-0a5f-4fe7-824e-3d159896a938 a aamas:Term ;
+aama:ID87c8f19c-0b2f-45a8-8723-fe461460e638 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "pe-" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3Ref ;
-	mal:number mal:persC ;
 	mal:case mal:CaseC ;
+	mal:number mal:persC ;
+	mal:person mal:Person3Ref ;
+	mal:gender mal:Common ;
+	mal:token "pe-" ;
 	.
 
-aama:IDb176bbb8-f12f-4c45-a805-02e31714486c a aamas:Term ;
+aama:ID3c2d7881-ebe8-4b40-8877-07535c18748a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "táání / tá" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
 	.
 
-aama:IDfc411f32-67a2-435b-8e1e-292aab950ed8 a aamas:Term ;
+aama:ID43c611d8-d34a-4aa4-8f0e-abca37c94245 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "nééní / né" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
 	.
 
-aama:IDfd664ac8-d1eb-479c-aeee-cc0fc0e4c54c a aamas:Term ;
+aama:ID0a57f8b0-d278-45ee-8f66-c601fff41cf9 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Masc ;
 	mal:token "ʔízí / ʔííní / ʔí" ;
-	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
 	.
 
-aama:ID901a4bd3-f4c3-416f-8c3b-73de9235e07e a aamas:Term ;
+aama:IDb66d277d-6b12-4859-8022-c172d93ece02 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔízá" ;
+	mal:case mal:Nominative ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Nominative ;
+	mal:token "ʔízá" ;
 	.
 
-aama:IDd34d8a8f-0094-4fdd-8660-94a336e6de29 a aamas:Term ;
+aama:ID4d754747-3cf8-4dd7-a131-7f763f62be94 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Nominative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "núúní / nú" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:Nominative ;
 	.
 
-aama:ID33cad3b3-b68a-4dbd-ba45-a2c8367a03ae a aamas:Term ;
+aama:ID00b55686-f0a7-4896-9270-2847a9ae719a a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Nominative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ʔíntsí" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Nominative ;
 	.
 
-aama:ID5b3cb419-3e77-44d0-9a09-d28cf16ec6fb a aamas:Term ;
+aama:ID66600f15-45a9-4761-add6-a8c87060eafb a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Nominative ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
 	mal:token "ʔiyátá" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
-	mal:case mal:Nominative ;
 	.
 
-aama:IDc7715741-ab5b-4559-9134-29a1ad6397d8 a aamas:Term ;
+aama:IDd9a402c7-1777-452a-ab2a-b4cad44fc5c7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
+	mal:gender mal:Common ;
 	mal:token "ta" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
 	.
 
-aama:ID03f30f0e-51c8-49bd-af28-947fa9fd3853 a aamas:Term ;
+aama:IDedf4cc8a-9626-4e3c-bf6c-2caaf39e4acb a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
+	mal:gender mal:Common ;
 	mal:token "ne" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
 	.
 
-aama:ID24d32984-e1c2-4402-bcfd-dcfe27dc90a5 a aamas:Term ;
+aama:ID39270b91-80ab-4c7b-a692-e298faf2473b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔízá" ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Masc ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
+	mal:token "ʔízá" ;
 	.
 
-aama:ID7e0c2d5e-82e9-4e15-a8d3-d4d76f96d098 a aamas:Term ;
+aama:ID58aba16c-8781-4c17-aeac-65273e33c937 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔízó" ;
+	mal:case mal:Possessive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person3 ;
 	mal:gender mal:Fem ;
-	mal:person mal:Person3 ;
-	mal:number mal:Singular ;
-	mal:case mal:Possessive ;
+	mal:token "ʔízó" ;
 	.
 
-aama:IDa2561bde-fc23-4e13-bcc9-30393af5d0f2 a aamas:Term ;
+aama:IDf458217a-032e-4fa2-8465-88b5497aad93 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "nu" ;
-	mal:gender mal:Common ;
+	mal:case mal:Possessive ;
+	mal:number mal:Plural ;
 	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
-	mal:case mal:Possessive ;
+	mal:gender mal:Common ;
+	mal:token "nu" ;
 	.
 
-aama:IDe28ec38a-3c61-4de8-9a8d-bed3509ac919 a aamas:Term ;
+aama:ID791bde77-702d-467b-b601-58cc0866fd18 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔíntsi" ;
-	mal:gender mal:Common ;
+	mal:case mal:Possessive ;
+	mal:number mal:Plural ;
 	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
-	mal:case mal:Possessive ;
+	mal:gender mal:Common ;
+	mal:token "ʔíntsi" ;
 	.
 
-aama:ID049f03a1-af76-4378-96ca-09ade33f4f21 a aamas:Term ;
+aama:ID3fbf351d-8479-460e-a839-afaecc53ddcd a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PProInd ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:ProInd ;
-	mal:token "ʔiyátó" ;
-	mal:gender mal:Common ;
-	mal:person mal:Person3 ;
-	mal:number mal:Plural ;
 	mal:case mal:Possessive ;
+	mal:number mal:Plural ;
+	mal:person mal:Person3 ;
+	mal:gender mal:Common ;
+	mal:token "ʔiyátó" ;
 	.
 
-#TERMCLUSTER:  maale-PRestrictive
+#TERMCLUSTER: maale-PRestrictive
 
 mal:maale-PRestrictive a aamas:Termcluster ;
 	rdfs:label "maale-PRestrictive" ;
 	aamas:lang aama:Maale ;
-	rdfs:comment "A01#4.5 :: I alone%%you alone%%." 
+	rdfs:comment "A01#4.5 :: I alone,you alone,." 
 	.
 
-aama:ID538bdc81-3b52-43d7-bd79-a7375f08716f a aamas:Term ;
+aama:IDf1fe5313-1b6b-497c-8155-6c8cc2bd24aa a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Restrictive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person1 ;
 	mal:token "taasi" ;
-	mal:person mal:Person1 ;
-	mal:number mal:Singular ;
 	.
 
-aama:IDdfc5a2c2-1b53-45a2-81ce-a4bfe8487ed5 a aamas:Term ;
+aama:ID2633182a-16a8-4fe7-9854-915f1dff2468 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Restrictive ;
+	mal:number mal:Singular ;
+	mal:person mal:Person2 ;
 	mal:token "neesi" ;
-	mal:person mal:Person2 ;
-	mal:number mal:Singular ;
 	.
 
-aama:ID832c45f2-22dc-4874-9beb-ecacdc0f016d a aamas:Term ;
+aama:ID238c0ab6-c54e-422e-b9ef-6aefa3d795b4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Restrictive ;
-	mal:token "nuusi" ;
+	mal:number mal:Plural ;
 	mal:person mal:Person1 ;
-	mal:number mal:Plural ;
+	mal:token "nuusi" ;
 	.
 
-aama:IDd80fd5e1-452d-48ad-86e0-2e00e4b30866 a aamas:Term ;
+aama:ID7203b3ea-92b3-4a6a-9915-e3cfa99801a8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Restrictive ;
-	mal:token "ʔíntsísi" ;
+	mal:number mal:Plural ;
 	mal:person mal:Person2 ;
-	mal:number mal:Plural ;
+	mal:token "ʔíntsísi" ;
 	.
 
-aama:ID2080ee5d-8309-47fe-886c-65a31a02098f a aamas:Term ;
+aama:IDf1b67f50-2b70-48b1-8ee0-29b10a49da21 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-PRestrictive ;
-	mal:pos mal:Pronoun ;
 	mal:pmorphClass mal:ProMorph ;
+	mal:pos mal:Pronoun ;
 	mal:proClass mal:Restrictive ;
-	mal:token "peesi" ;
-	mal:person mal:Person3 ;
 	mal:number mal:NumC ;
+	mal:person mal:Person3 ;
+	mal:token "peesi" ;
 	.
 
-#TERMCLUSTER:  maale-VBE
+#TERMCLUSTER: maale-VBE
 
 mal:maale-VBE a aamas:Termcluster ;
 	rdfs:label "maale-VBE" ;
@@ -2754,85 +2725,85 @@ mal:maale-VBE a aamas:Termcluster ;
 	rdfs:comment "A01#5.3.1.3 :: The various verbs BE/EXIST only occur with aspect suffixes noted in paradigm. Template: AspSuff + beStem + Modal Context" 
 	.
 
-aama:ID6d9a157f-9d2a-4481-9236-e6d4ca02596f a aamas:Term ;
+aama:IDe25507d4-4dc4-4e1a-80f3-5d4399dd1c68 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:temporal mal:Clauses ;
 	mal:verbMorphClass mal:BE ;
-	mal:token-note-template "-andá- + N- + Dubitative" ;
-	mal:token "N- . . .  -andá- : Dubitative" ;
+	mal:vmorphClass mal:Finite ;
+	mal:polarity mal:Affirmative ;
 	mal:tam mal:ImperfectiveFuture ;
-	mal:polarity mal:Affirmative ;
+	mal:token "N- . . .  -andá- : Dubitative" ;
+	mal:token-note-template "-andá- + N- + Dubitative" ;
 	.
 
-aama:IDa96f7d43-a975-4041-b56e-43ef0b829183 a aamas:Term ;
+aama:IDd3b24049-8ae3-4ffd-ad4d-6b8e24c483a7 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:temporal mal:Clauses ;
 	mal:verbMorphClass mal:BE ;
-	mal:token-note-template "Common + t- + PresentConditionals" ;
+	mal:vmorphClass mal:Finite ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
 	mal:token "t- . . .  Common : PresentConditionals" ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
+	mal:token-note-template "Common + t- + PresentConditionals" ;
 	.
 
-aama:IDda2d5d89-1d75-47cf-9e58-731812af00fb a aamas:Term ;
+aama:ID6a7be31a-e950-4f49-82d0-7fd8cc8c76a4 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:temporal mal:Clauses ;
 	mal:verbMorphClass mal:BE ;
-	mal:token-note-template "Common + d- + Interrogative" ;
+	mal:vmorphClass mal:Finite ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
 	mal:token "d- . . .  Common : Interrogative" ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
+	mal:token-note-template "Common + d- + Interrogative" ;
 	.
 
-aama:ID94bc1168-50d6-4710-9cbb-759a4317a0e4 a aamas:Term ;
+aama:ID5507c711-dcb3-4bda-a155-1ad9b56111a3 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:temporal mal:Clauses ;
 	mal:verbMorphClass mal:BE ;
-	mal:token-note-template "Common + Common + with imperfPres even when situation refers to past event" ;
+	mal:vmorphClass mal:Finite ;
+	mal:polarity mal:Affirmative ;
+	mal:tam mal:ImperfectivePresent ;
 	mal:token "" ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Affirmative ;
+	mal:token-note-template "Common + Common + with imperfPres even when situation refers to past event" ;
 	.
 
-aama:IDda0e3c67-a627-45cf-b888-0162f8716be5 a aamas:Term ;
+aama:ID5b66032a-dc31-4294-a937-5bcad761b746 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:temporal mal:Clauses ;
 	mal:verbMorphClass mal:BE ;
-	mal:token-note-template "-uwá- + t- + NegativeIdentity" ;
+	mal:vmorphClass mal:Finite ;
+	mal:polarity mal:Negative ;
+	mal:tam mal:ImperfectivePresent ;
 	mal:token "t- . . .  -uwá- : NegativeIdentity" ;
-	mal:tam mal:ImperfectivePresent ;
-	mal:polarity mal:Negative ;
+	mal:token-note-template "-uwá- + t- + NegativeIdentity" ;
 	.
 
-aama:ID6da0713f-3f85-456a-b548-864b644eaa4e a aamas:Term ;
+aama:IDfe573f46-30e2-4821-85ef-7729eb3f1b5b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VBE ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:temporal mal:Clauses ;
 	mal:verbMorphClass mal:BE ;
-	mal:token-note-template "Common + ba- + without aspect:bá-se does not exist" ;
-	mal:token "ba- . . .  Common : without aspect:bá-se does not exist" ;
-	mal:tam mal:TamC ;
+	mal:vmorphClass mal:Finite ;
 	mal:polarity mal:Negative ;
+	mal:tam mal:TamC ;
+	mal:token "ba- . . .  Common : without aspect:bá-se does not exist" ;
+	mal:token-note-template "Common + ba- + without aspect:bá-se does not exist" ;
 	.
 
-#TERMCLUSTER:  maale-VDervStem
+#TERMCLUSTER: maale-VDervStem
 
 mal:maale-VDervStem a aamas:Termcluster ;
 	rdfs:label "maale-VDervStem" ;
@@ -2840,87 +2811,87 @@ mal:maale-VDervStem a aamas:Termcluster ;
 	rdfs:comment "A01#5.2 :: Author gives many phonological and semantic details about affix and verb-stem alternations and lexico-semantic effects." 
 	.
 
-aama:IDf20b673d-2f9c-42f2-9f0a-2e0460de4fd3 a aamas:Term ;
+aama:ID9078b438-cee2-47be-ad7e-0bace8751d78 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:DervStem ;
-	mal:token "-is- ~ -iš- ~ -z- ~ -s- ~ cc- goes_to cc- ~ šk- goes_to šš- / šk-is-" ;
+	mal:vmorphClass mal:Finite ;
 	mal:derivedStem mal:Causative ;
+	mal:token "-is- ~ -iš- ~ -z- ~ -s- ~ cc- goes_to cc- ~ šk- goes_to šš- / šk-is-" ;
 	.
 
-aama:ID15783a01-ff0f-4c18-a9e8-132eb2389a52 a aamas:Term ;
+aama:ID31bc7dd0-263a-4fbc-9f0b-c60ac2682edf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:DervStem ;
-	mal:token "-is-is-" ;
+	mal:vmorphClass mal:Finite ;
 	mal:derivedStem mal:Causative2 ;
+	mal:token "-is-is-" ;
 	.
 
-aama:IDc76de9a4-2345-43f6-8f1c-11ba0e07c254 a aamas:Term ;
+aama:IDb3e0fe86-986e-4a24-9096-08c5b169d7db a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:DervStem ;
-	mal:token "-k- ~ -k-" ;
+	mal:vmorphClass mal:Finite ;
 	mal:derivedStem mal:Denominal ;
+	mal:token "-k- ~ -k-" ;
 	.
 
-aama:ID1482da7e-1577-4e18-8daa-958629d41caa a aamas:Term ;
+aama:ID7194ca2f-0cc2-4b64-b93c-4f6a77b62c81 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:DervStem ;
-	mal:token "-Ø- ~ -at- ~ -aɗ-" ;
+	mal:vmorphClass mal:Finite ;
 	mal:derivedStem mal:Inchoative ;
+	mal:token "-Ø- ~ -at- ~ -aɗ-" ;
 	.
 
-aama:IDaa1cc303-b419-409c-aec3-898e06324924 a aamas:Term ;
+aama:IDf915317f-d974-4ebe-83b5-ed69367b7d38 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:DervStem ;
-	mal:token "#CV" ;
+	mal:vmorphClass mal:Finite ;
 	mal:derivedStem mal:Intensive ;
+	mal:token "#CV" ;
 	.
 
-aama:ID3cd14f8c-8b81-4e74-a94d-a8fd36ffac22 a aamas:Term ;
+aama:ID6b1e8166-01a1-46ce-b3e0-a2542084b213 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:DervStem ;
-	mal:token "-ínt-" ;
+	mal:vmorphClass mal:Finite ;
 	mal:derivedStem mal:Passive ;
+	mal:token "-ínt-" ;
 	.
 
-aama:ID82d75725-4b8c-40bb-a4a5-aee2ccabf49f a aamas:Term ;
+aama:IDec9d561b-f0ef-4301-82ce-4c277fd7a21f a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:DervStem ;
-	mal:token "-ínt-is-" ;
+	mal:vmorphClass mal:Finite ;
 	mal:derivedStem mal:PassiveCausative ;
+	mal:token "-ínt-is-" ;
 	.
 
-aama:ID56a21f6d-01cd-4483-ab77-e627aea996bd a aamas:Term ;
+aama:ID096cb008-f1fe-41ac-a20e-00254e037b08 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VDervStem ;
-	mal:vmorphClass mal:Finite ;
 	mal:pos mal:Verb ;
 	mal:verbMorphClass mal:DervStem ;
-	mal:token "-t-" ;
+	mal:vmorphClass mal:Finite ;
 	mal:derivedStem mal:Reflexive ;
+	mal:token "-t-" ;
 	.
 
-#TERMCLUSTER:  maale-VRootStructure
+#TERMCLUSTER: maale-VRootStructure
 
 mal:maale-VRootStructure a aamas:Termcluster ;
 	rdfs:label "maale-VRootStructure" ;
@@ -2928,262 +2899,263 @@ mal:maale-VRootStructure a aamas:Termcluster ;
 	rdfs:comment "A01Table 5.1-2 :: Root structure:group1 – one-peak roots;group2 – two-peak roots" 
 	.
 
-aama:ID9d1332c7-a365-4eea-b461-1f6e1e512699 a aamas:Term ;
+aama:ID98d57bc6-cb3e-4bb5-b180-4f954da84191 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "C + be" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "t-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "C + be" ;
 	.
 
-aama:IDc2fa8261-a681-476b-a635-f195fd6b2b33 a aamas:Term ;
+aama:ID64e29ff8-d580-4506-ba65-3eb858a2da79 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "C + be" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "n-" ;
-	mal:rootStructure mal:Group1 ;
-	.
-
-aama:ID3c896413-ea6d-40b6-9a5a-73a12e52ed11 a aamas:Term ;
-	aamas:lang aama:Maale ;
-	aamas:memberOf mal:maale-VRootStructure ;
-	mal:pos mal:Verb ;
-	mal:vmorphClass mal:RootStructure ;
 	mal:token-note-structure "C + be" ;
+	.
+
+aama:IDcb82e3f9-03e7-4d59-8a27-ebdae95718b6 a aamas:Term ;
+	aamas:lang aama:Maale ;
+	aamas:memberOf mal:maale-VRootStructure ;
+	mal:pos mal:Verb ;
+	mal:vmorphClass mal:RootStructure ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "d-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "C + be" ;
 	.
 
-aama:IDfb644618-f89b-4c8c-b5e3-f5667d425266 a aamas:Term ;
+aama:ID740e3096-c3a1-47f4-9601-1fd74acfd861 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
+	mal:rootStructure mal:Group1 ;
+	mal:token "⊤" ;
 	mal:token-note-structure "CV + Existence" ;
-	mal:token "⊤" ;
-	mal:rootStructure mal:Group1 ;
 	.
 
-aama:ID94a76798-b2a2-4dff-8333-f2b323526d9c a aamas:Term ;
+aama:ID394658f1-585d-40f9-9919-f350687d95da a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVC + say" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "geʔ-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVC + say" ;
 	.
 
-aama:ID3b3bceea-2146-44da-b95f-9185076ec4c2 a aamas:Term ;
+aama:ID5ef68863-27c1-4ea9-894e-fadadb027c9c a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVC + Repeat" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "lám-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVC + Repeat" ;
 	.
 
-aama:ID7d5e9ab9-f003-4408-b00e-2164d1c9adea a aamas:Term ;
+aama:ID55e120ed-23f6-4c17-a7f0-861899aac641 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVC + work" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "maɗ-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVC + work" ;
 	.
 
-aama:ID64ac6bc9-d6cc-4ba5-93b6-864795c3247f a aamas:Term ;
+aama:IDd7cffe6b-1833-41dc-8829-21aba20e6e8d a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVVC + go" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "⊤" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVVC + go" ;
 	.
 
-aama:IDababaa18-f0fa-46dc-b5d1-7090610094f8 a aamas:Term ;
+aama:ID31905bf0-02d5-4a35-837e-c3b38a5b9703 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVVC + throw" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "kéér-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVVC + throw" ;
 	.
 
-aama:ID31390f53-6915-408b-8222-024300007c51 a aamas:Term ;
+aama:ID8cfcd8a3-122f-481c-bc8c-d76aa30df6bf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVVC + smear" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "biiʔ-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVVC + smear" ;
 	.
 
-aama:ID6d9b9f98-15e1-4fb5-b8c0-1c02956c2423 a aamas:Term ;
+aama:ID668e55f7-3d37-442c-94cb-fc9a9157b5fe a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCC + wipe" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "ʔúc’c’-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVCC + wipe" ;
 	.
 
-aama:IDed99af0e-7cf6-49ac-a787-e82138b13dfc a aamas:Term ;
+aama:ID880b001f-b6dd-4e0f-a7b3-f693eac02770 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCC + jump" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "ɓull-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVCC + jump" ;
 	.
 
-aama:IDba95c15c-03ed-4ed2-8c6b-ecd4ce1ddd7e a aamas:Term ;
+aama:ID55f64ce2-9786-49ee-8a49-13900a5726f8 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCC + drip" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "soɗɗ-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVCC + drip" ;
 	.
 
-aama:IDd1ae6d77-e4c5-42d7-b02f-8b05a03b6034 a aamas:Term ;
+aama:ID947faa59-57d8-46f7-87b9-9afcd38e1130 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVVCC + die" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "háík’k-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVVCC + die" ;
 	.
 
-aama:ID20498e35-4847-4df0-b54d-de82d5ee09df a aamas:Term ;
+aama:ID3c35076a-d154-4f63-a57c-264ca8d46198 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVVCC + be cold" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "c’ííʃk-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVVCC + be cold" ;
 	.
 
-aama:IDfb39ad8c-146f-4985-ae5e-5a0499164d15 a aamas:Term ;
+aama:ID3dc9d9c3-9751-4960-ab25-a2309627b6a0 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVVCC + Suffocate" ;
+	mal:rootStructure mal:Group1 ;
 	mal:token "c’uull-" ;
-	mal:rootStructure mal:Group1 ;
+	mal:token-note-structure "CVVCC + Suffocate" ;
 	.
 
-aama:IDa826787d-62c2-4465-84fc-a847ef80cc8c a aamas:Term ;
+aama:IDd30bfa57-bc2d-48fa-aa04-b848dffcbddb a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCVC + Inherit" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "ɗakal-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCVC + Inherit" ;
 	.
 
-aama:IDc6903e89-bffc-4291-a5c1-c82bf0f9f907 a aamas:Term ;
+aama:ID6533ad4a-3690-4d29-ba5d-ce7747196f49 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCVC + thank" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "galat-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCVC + thank" ;
 	.
 
-aama:IDf658c93e-9048-41a9-ade4-b0d6223da4e3 a aamas:Term ;
+aama:IDc4f871b9-4b26-4981-9719-9ab57eb887ad a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCVCC + sneeze" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "h/yíɗiʃk-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCVCC + sneeze" ;
 	.
 
-aama:ID1f7e58b0-9d03-438a-a9ff-9939f1f03557 a aamas:Term ;
+aama:ID82cc7386-9c2d-4233-a5bd-0ff51c08bd12 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCVCC + believe" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "gumurk-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCVCC + believe" ;
 	.
 
-aama:ID92547c0d-e950-47a1-9acc-3be3a8acb45a a aamas:Term ;
+aama:IDfcfb5e76-cf28-4fc4-9852-6f3c0a020998 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCVCC + curse" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "gadánk’-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCVCC + curse" ;
 	.
 
-aama:IDd6149a02-e48b-43ac-b271-8cdf5e6d65a0 a aamas:Term ;
+aama:IDe90c733c-6be1-45cd-8f09-15cfa4a021bf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCCVC-C + kneel" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "gumʔat-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCCVC-C + kneel" ;
 	.
 
-aama:IDa1858b7a-6e5e-488f-bf07-928e457f8a97 a aamas:Term ;
+aama:IDc8c16de0-9c06-44c8-9c7c-4bbe746bcdcf a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCCVC-C + roll over" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "bunbal-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCCVC-C + roll over" ;
 	.
 
-aama:ID514443f6-89b4-402e-b186-72ed5604a0ad a aamas:Term ;
+aama:IDb7c5e0c6-f661-4d5c-8cd2-e4b9c8fd1e68 a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCCVC-C + Murmur" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "gundum-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCCVC-C + Murmur" ;
 	.
 
-aama:ID782f681d-abaa-49dc-b9f4-50002d78af88 a aamas:Term ;
+aama:IDd383673f-afe5-4b5a-8576-b5e4875e20ea a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVCVVCC + Shiver" ;
+	mal:rootStructure mal:Group2 ;
 	mal:token "gogaik’k’-" ;
-	mal:rootStructure mal:Group2 ;
+	mal:token-note-structure "CVCVVCC + Shiver" ;
 	.
 
-aama:ID0c9175a0-e682-436d-9db4-cc92169f82ec a aamas:Term ;
+aama:IDacc4d119-96e9-4ee1-ab0e-0085253b5d2b a aamas:Term ;
 	aamas:lang aama:Maale ;
 	aamas:memberOf mal:maale-VRootStructure ;
 	mal:pos mal:Verb ;
 	mal:vmorphClass mal:RootStructure ;
-	mal:token-note-structure "CVVCVCC + belch" ;
-	mal:token "deeɓisk-" ;
 	mal:rootStructure mal:Group2 ;
+	mal:token "deeɓisk-" ;
+	mal:token-note-structure "CVVCVCC + belch" ;
 	.
+
